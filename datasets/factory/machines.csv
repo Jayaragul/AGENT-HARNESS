@@ -1,0 +1,8 @@
+machine_id,machine_name,type,status,location,hourly_rate,maintenance_last,maintenance_next
+CUT-001,Fabric Cutter,cutting,operational,Floor-A,45.0,2026-06-15,2026-09-15
+CUT-002,Metal Cutter,cutting,operational,Floor-A,55.0,2026-07-01,2026-10-01
+SAW-001,Table Saw,cutting,operational,Floor-B,40.0,2026-06-20,2026-09-20
+ASM-001,Assembly Station,assembly,operational,Floor-C,35.0,2026-07-10,2026-10-10
+PNT-001,Painting Booth,finishing,operational,Floor-D,50.0,2026-06-25,2026-09-25
+PNT-002,Spray Painter,finishing,maintenance,Floor-D,48.0,2026-07-01,2026-07-28
+PKG-001,Packaging Unit,packaging,offline,Floor-E,30.0,2026-07-15,2026-08-15

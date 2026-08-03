@@ -1,0 +1,17 @@
+product_name,material_id,material_name,quantity_per_unit,unit,machine_id,machine_name,setup_time_min,cycle_time_min
+Chair,FAB-001,Fabric,5.0,metres,CUT-001,Fabric Cutter,30.0,4.0
+Chair,WOD-001,Pine Wood,2.0,kg,SAW-001,Table Saw,15.0,3.0
+Chair,SCR-001,Screws Pack,20.0,pieces,ASM-001,Assembly Station,45.0,8.0
+Chair,PLT-001,White Paint,0.5,litres,PNT-001,Painting Booth,60.0,6.0
+Table,WOD-002,Oak Wood,8.0,kg,SAW-001,Table Saw,20.0,5.0
+Table,MTL-001,Steel Rod,4.0,kg,CUT-002,Metal Cutter,40.0,7.0
+Table,SCR-001,Screws Pack,30.0,pieces,ASM-001,Assembly Station,60.0,10.0
+Table,PLT-002,Wood Varnish,1.0,litres,PNT-001,Painting Booth,45.0,5.0
+Shelf,WOD-001,Pine Wood,3.0,kg,SAW-001,Table Saw,10.0,2.5
+Shelf,SCR-002,Nails Pack,15.0,pieces,ASM-001,Assembly Station,30.0,5.0
+Shelf,PLT-001,White Paint,0.3,litres,PNT-001,Painting Booth,30.0,4.0
+Cabinet,WOD-002,Oak Wood,12.0,kg,SAW-001,Table Saw,30.0,8.0
+Cabinet,MTL-002,Aluminium Sheet,3.0,kg,CUT-002,Metal Cutter,50.0,6.0
+Cabinet,HDW-001,Hinges,8.0,pieces,ASM-001,Assembly Station,75.0,12.0
+Cabinet,HDW-002,Handles,4.0,pieces,ASM-001,Assembly Station,0.0,2.0
+Cabinet,PLT-002,Wood Varnish,2.0,litres,PNT-001,Painting Booth,60.0,6.0

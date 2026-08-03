@@ -1,0 +1,11 @@
+{
+  "total_accepted": 10000,
+  "total_rejected": 22501,
+  "validation_passed": true,
+  "leakage_detected": false,
+  "leakage_details": {
+    "id_overlaps": [],
+    "problem_overlaps": [],
+    "template_overlaps": []
+  }
+}

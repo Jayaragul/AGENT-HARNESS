@@ -1,0 +1,11 @@
+order_id,product_name,quantity,unit,due_date,status,priority,customer
+ORD-1001,Chair,100.0,pieces,2026-08-15,active,high,ACME Corp
+ORD-1002,Table,50.0,pieces,2026-08-20,active,urgent,Beta Inc
+ORD-1003,Chair,200.0,pieces,2026-09-01,active,normal,Gamma Ltd
+ORD-1004,Shelf,150.0,pieces,2026-08-10,active,high,Delta Co
+ORD-1005,Chair,75.0,pieces,2026-07-30,completed,normal,ACME Corp
+ORD-1006,Table,30.0,pieces,2026-08-25,active,low,Epsilon LLC
+ORD-1007,Shelf,100.0,pieces,2026-08-05,cancelled,normal,Zeta Corp
+ORD-1008,Cabinet,20.0,pieces,2026-09-15,active,high,ACME Corp
+ORD-1009,Table,80.0,pieces,2026-09-10,active,normal,Beta Inc
+ORD-1010,Shelf,200.0,pieces,2026-08-30,active,low,Gamma Ltd

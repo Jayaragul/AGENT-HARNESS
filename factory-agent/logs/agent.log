@@ -1,0 +1,1181 @@
+2026-07-23 17:53:27 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 17:53:27 | INFO     | factory_agent.harness | Processing query
+2026-07-23 17:53:27 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 17:53:27 | INFO     | factory_agent.skill_selector | Skill selected
+2026-07-23 17:53:27 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 17:53:27 | INFO     | factory_agent.harness | Processing query
+2026-07-23 17:53:27 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 17:53:27 | INFO     | factory_agent.skill_selector | Skill selected
+2026-07-23 17:53:27 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 17:53:27 | INFO     | factory_agent.harness | Processing query
+2026-07-23 17:53:27 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 17:53:27 | INFO     | factory_agent.skill_selector | Skill selected
+2026-07-23 17:53:27 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 17:53:27 | INFO     | factory_agent.harness | Processing query
+2026-07-23 17:53:27 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 17:53:27 | INFO     | factory_agent.harness | Processing query
+2026-07-23 17:53:27 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 17:53:27 | INFO     | factory_agent.skill_selector | Skill selected
+2026-07-23 17:54:11 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 17:54:11 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 17:54:11 | INFO     | factory_agent.harness | Processing query
+2026-07-23 17:54:11 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 17:54:11 | INFO     | factory_agent.skill_selector | Skill selected
+2026-07-23 17:54:11 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 17:54:12 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 17:54:12 | INFO     | factory_agent.harness | Processing query
+2026-07-23 17:54:12 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 17:54:12 | INFO     | factory_agent.skill_selector | Skill selected
+2026-07-23 17:54:12 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 17:54:12 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 17:54:12 | INFO     | factory_agent.harness | Processing query
+2026-07-23 17:54:12 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 17:54:12 | INFO     | factory_agent.skill_selector | Skill selected
+2026-07-23 17:54:12 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 17:54:12 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 17:54:12 | INFO     | factory_agent.harness | Processing query
+2026-07-23 17:54:12 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 17:54:12 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 17:54:12 | INFO     | factory_agent.harness | Processing query
+2026-07-23 17:54:12 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 17:54:12 | INFO     | factory_agent.skill_selector | Skill selected
+2026-07-23 17:54:12 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 17:54:12 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 17:54:12 | INFO     | factory_agent.output_writer | Report written
+2026-07-23 17:54:12 | INFO     | factory_agent.output_writer | Report written
+2026-07-23 17:54:59 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 17:54:59 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 17:54:59 | INFO     | factory_agent.harness | Processing query
+2026-07-23 17:54:59 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 17:54:59 | INFO     | factory_agent.skill_selector | Skill selected
+2026-07-23 17:54:59 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 17:54:59 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 17:54:59 | INFO     | factory_agent.harness | Processing query
+2026-07-23 17:54:59 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 17:54:59 | INFO     | factory_agent.skill_selector | Skill selected
+2026-07-23 17:54:59 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 17:54:59 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 17:54:59 | INFO     | factory_agent.harness | Processing query
+2026-07-23 17:54:59 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 17:54:59 | INFO     | factory_agent.skill_selector | Skill selected
+2026-07-23 17:54:59 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 17:54:59 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 17:54:59 | INFO     | factory_agent.harness | Processing query
+2026-07-23 17:54:59 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 17:54:59 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 17:54:59 | INFO     | factory_agent.harness | Processing query
+2026-07-23 17:54:59 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 17:54:59 | INFO     | factory_agent.skill_selector | Skill selected
+2026-07-23 17:54:59 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 17:54:59 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 17:54:59 | INFO     | factory_agent.output_writer | Report written
+2026-07-23 17:54:59 | INFO     | factory_agent.output_writer | Report written
+2026-07-23 18:13:28 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 18:13:55 | INFO     | factory_agent.harness | Processing query
+2026-07-23 18:13:55 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 18:18:38 | INFO     | factory_agent.harness | Processing query
+2026-07-23 18:18:38 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 18:18:42 | INFO     | factory_agent.harness | Processing query
+2026-07-23 18:18:42 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 18:18:50 | INFO     | factory_agent.harness | Processing query
+2026-07-23 18:18:50 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 18:21:28 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 18:21:28 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 18:21:28 | INFO     | factory_agent.harness | Processing query
+2026-07-23 18:21:28 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 18:21:28 | INFO     | factory_agent.skill_selector | Skill selected
+2026-07-23 18:21:28 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 18:21:28 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 18:21:28 | INFO     | factory_agent.harness | Processing query
+2026-07-23 18:21:28 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 18:21:28 | INFO     | factory_agent.skill_selector | Skill selected
+2026-07-23 18:21:28 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 18:21:28 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 18:21:28 | INFO     | factory_agent.harness | Processing query
+2026-07-23 18:21:28 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 18:21:28 | INFO     | factory_agent.skill_selector | Skill selected
+2026-07-23 18:21:28 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 18:21:28 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 18:21:28 | INFO     | factory_agent.harness | Processing query
+2026-07-23 18:21:28 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 18:21:28 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 18:21:28 | INFO     | factory_agent.harness | Processing query
+2026-07-23 18:21:28 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 18:21:28 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 18:21:28 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 18:21:28 | INFO     | factory_agent.harness | Processing query
+2026-07-23 18:21:28 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 18:21:28 | INFO     | factory_agent.skill_selector | Skill selected
+2026-07-23 18:21:28 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 18:21:28 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 18:45:09 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 18:45:09 | INFO     | factory_agent.harness | Processing query
+2026-07-23 18:45:09 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 18:45:09 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 18:45:50 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 18:45:50 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 18:45:50 | INFO     | factory_agent.harness | Processing query
+2026-07-23 18:45:50 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 18:45:50 | INFO     | factory_agent.skill_selector | Skill selected
+2026-07-23 18:45:50 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 18:45:50 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 18:45:50 | INFO     | factory_agent.harness | Processing query
+2026-07-23 18:45:50 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 18:45:50 | INFO     | factory_agent.skill_selector | Skill selected
+2026-07-23 18:45:50 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 18:45:50 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 18:45:50 | INFO     | factory_agent.harness | Processing query
+2026-07-23 18:45:50 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 18:45:50 | INFO     | factory_agent.skill_selector | Skill selected
+2026-07-23 18:45:50 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 18:45:50 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 18:45:50 | INFO     | factory_agent.harness | Processing query
+2026-07-23 18:45:50 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 18:45:50 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 18:45:50 | INFO     | factory_agent.harness | Processing query
+2026-07-23 18:45:50 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 18:45:50 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 18:45:50 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 18:45:50 | INFO     | factory_agent.harness | Processing query
+2026-07-23 18:45:50 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 18:45:50 | INFO     | factory_agent.skill_selector | Skill selected
+2026-07-23 18:45:50 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 18:45:50 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 18:47:34 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 18:47:36 | INFO     | factory_agent.harness | Processing query
+2026-07-23 18:47:36 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 18:50:50 | INFO     | factory_agent.harness | Processing query
+2026-07-23 18:50:50 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 18:50:58 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 18:51:00 | INFO     | factory_agent.harness | Processing query
+2026-07-23 18:51:00 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 18:51:04 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 18:51:12 | INFO     | factory_agent.harness | Processing query
+2026-07-23 18:51:12 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 18:51:16 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 18:51:36 | INFO     | factory_agent.harness | Processing query
+2026-07-23 18:51:36 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 18:52:09 | INFO     | factory_agent.harness | Processing query
+2026-07-23 18:52:09 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 18:52:22 | INFO     | factory_agent.harness | Processing query
+2026-07-23 18:52:22 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 18:52:28 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 18:55:56 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 18:55:56 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 18:55:56 | INFO     | factory_agent.harness | Processing query
+2026-07-23 18:55:56 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 18:55:56 | INFO     | factory_agent.skill_selector | Skill selected
+2026-07-23 18:55:56 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 18:55:56 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 18:55:56 | INFO     | factory_agent.harness | Processing query
+2026-07-23 18:55:56 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 18:55:56 | INFO     | factory_agent.skill_selector | Skill selected
+2026-07-23 18:55:56 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 18:55:56 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 18:55:56 | INFO     | factory_agent.harness | Processing query
+2026-07-23 18:55:56 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 18:55:56 | INFO     | factory_agent.skill_selector | Skill selected
+2026-07-23 18:55:56 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 18:55:56 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 18:55:56 | INFO     | factory_agent.harness | Processing query
+2026-07-23 18:55:56 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 18:55:56 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 18:55:56 | INFO     | factory_agent.harness | Processing query
+2026-07-23 18:55:56 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 18:55:56 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 18:55:56 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 18:55:56 | INFO     | factory_agent.harness | Processing query
+2026-07-23 18:55:56 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 18:55:56 | INFO     | factory_agent.skill_selector | Skill selected
+2026-07-23 18:55:56 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 18:55:56 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 18:57:07 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 18:57:07 | INFO     | factory_agent.harness | Processing query
+2026-07-23 18:57:07 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 18:57:13 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 18:57:54 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 18:57:56 | INFO     | factory_agent.harness | Processing query
+2026-07-23 18:57:56 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 18:57:59 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 18:58:13 | INFO     | factory_agent.harness | Processing query
+2026-07-23 18:58:13 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 18:58:26 | INFO     | factory_agent.harness | Processing query
+2026-07-23 18:58:26 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 19:08:14 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 19:08:17 | INFO     | factory_agent.harness | Processing query
+2026-07-23 19:08:17 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 19:08:21 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 19:08:41 | INFO     | factory_agent.harness | Processing query
+2026-07-23 19:08:41 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 19:15:26 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 19:15:26 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 19:15:26 | INFO     | factory_agent.harness | Processing query
+2026-07-23 19:15:26 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 19:15:26 | INFO     | factory_agent.skill_selector | Skill selected
+2026-07-23 19:15:26 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 19:15:26 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 19:15:26 | INFO     | factory_agent.harness | Processing query
+2026-07-23 19:15:26 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 19:15:26 | INFO     | factory_agent.skill_selector | Skill selected
+2026-07-23 19:15:26 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 19:15:26 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 19:15:26 | INFO     | factory_agent.harness | Processing query
+2026-07-23 19:15:26 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 19:15:26 | INFO     | factory_agent.skill_selector | Skill selected
+2026-07-23 19:15:26 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 19:15:26 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 19:15:26 | INFO     | factory_agent.harness | Processing query
+2026-07-23 19:15:26 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 19:15:26 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 19:15:26 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 19:15:26 | INFO     | factory_agent.harness | Processing query
+2026-07-23 19:15:26 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 19:15:26 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 19:15:26 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 19:15:26 | INFO     | factory_agent.harness | Processing query
+2026-07-23 19:15:26 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 19:15:26 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 19:15:26 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 19:15:26 | INFO     | factory_agent.harness | Processing query
+2026-07-23 19:15:26 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 19:15:26 | INFO     | factory_agent.skill_selector | Skill selected
+2026-07-23 19:15:26 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 19:15:26 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 19:15:37 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 19:15:37 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 19:15:37 | INFO     | factory_agent.harness | Processing query
+2026-07-23 19:15:37 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 19:15:37 | INFO     | factory_agent.skill_selector | Skill selected
+2026-07-23 19:15:37 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 19:15:37 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 19:15:37 | INFO     | factory_agent.harness | Processing query
+2026-07-23 19:15:37 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 19:15:37 | INFO     | factory_agent.skill_selector | Skill selected
+2026-07-23 19:15:37 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 19:15:37 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 19:15:37 | INFO     | factory_agent.harness | Processing query
+2026-07-23 19:15:37 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 19:15:37 | INFO     | factory_agent.skill_selector | Skill selected
+2026-07-23 19:15:37 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 19:15:37 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 19:15:37 | INFO     | factory_agent.harness | Processing query
+2026-07-23 19:15:37 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 19:15:37 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 19:15:37 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 19:15:37 | INFO     | factory_agent.harness | Processing query
+2026-07-23 19:15:37 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 19:15:37 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 19:15:37 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 19:15:37 | INFO     | factory_agent.harness | Processing query
+2026-07-23 19:15:37 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 19:15:37 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 19:15:37 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 19:15:37 | INFO     | factory_agent.harness | Processing query
+2026-07-23 19:15:37 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 19:15:37 | INFO     | factory_agent.skill_selector | Skill selected
+2026-07-23 19:15:37 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 19:15:37 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 19:15:37 | INFO     | factory_agent.output_writer | Report written
+2026-07-23 19:15:37 | INFO     | factory_agent.output_writer | Report written
+2026-07-23 19:15:51 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 19:15:51 | INFO     | factory_agent.harness | Processing query
+2026-07-23 19:15:51 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 19:15:51 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 19:15:51 | INFO     | factory_agent.harness | Processing query
+2026-07-23 19:15:51 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 19:15:51 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 19:18:15 | INFO     | factory_agent.harness | Processing query
+2026-07-23 19:18:15 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 19:18:18 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 19:18:29 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 19:18:48 | INFO     | factory_agent.harness | Processing query
+2026-07-23 19:18:48 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 19:18:52 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 19:19:15 | INFO     | factory_agent.harness | Processing query
+2026-07-23 19:19:15 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 19:19:20 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 19:23:57 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 19:23:57 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 19:23:57 | INFO     | factory_agent.harness | Processing query
+2026-07-23 19:23:57 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 19:23:57 | INFO     | factory_agent.skill_selector | Skill selected
+2026-07-23 19:23:57 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 19:23:57 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 19:23:57 | INFO     | factory_agent.harness | Processing query
+2026-07-23 19:23:57 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 19:23:57 | INFO     | factory_agent.skill_selector | Skill selected
+2026-07-23 19:23:57 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 19:23:57 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 19:23:57 | INFO     | factory_agent.harness | Processing query
+2026-07-23 19:23:57 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 19:23:57 | INFO     | factory_agent.skill_selector | Skill selected
+2026-07-23 19:23:58 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 19:23:58 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 19:23:58 | INFO     | factory_agent.harness | Processing query
+2026-07-23 19:23:58 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 19:23:58 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 19:23:58 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 19:23:58 | INFO     | factory_agent.harness | Processing query
+2026-07-23 19:23:58 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 19:23:58 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 19:23:58 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 19:23:58 | INFO     | factory_agent.harness | Processing query
+2026-07-23 19:23:58 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 19:23:58 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 19:23:58 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 19:23:58 | INFO     | factory_agent.harness | Processing query
+2026-07-23 19:23:58 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 19:23:58 | INFO     | factory_agent.skill_selector | Skill selected
+2026-07-23 19:23:58 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 19:23:58 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 19:24:10 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 19:24:10 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 19:24:10 | INFO     | factory_agent.harness | Processing query
+2026-07-23 19:24:10 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 19:24:10 | INFO     | factory_agent.skill_selector | Skill selected
+2026-07-23 19:24:10 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 19:24:10 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 19:24:10 | INFO     | factory_agent.harness | Processing query
+2026-07-23 19:24:10 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 19:24:10 | INFO     | factory_agent.skill_selector | Skill selected
+2026-07-23 19:24:10 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 19:24:10 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 19:24:10 | INFO     | factory_agent.harness | Processing query
+2026-07-23 19:24:10 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 19:24:10 | INFO     | factory_agent.skill_selector | Skill selected
+2026-07-23 19:24:10 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 19:24:10 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 19:24:10 | INFO     | factory_agent.harness | Processing query
+2026-07-23 19:24:10 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 19:24:10 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 19:24:10 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 19:24:10 | INFO     | factory_agent.harness | Processing query
+2026-07-23 19:24:10 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 19:24:10 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 19:24:10 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 19:24:10 | INFO     | factory_agent.harness | Processing query
+2026-07-23 19:24:10 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 19:24:10 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 19:24:10 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 19:24:10 | INFO     | factory_agent.harness | Processing query
+2026-07-23 19:24:10 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 19:24:10 | INFO     | factory_agent.skill_selector | Skill selected
+2026-07-23 19:24:10 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 19:24:10 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 19:24:10 | INFO     | factory_agent.output_writer | Report written
+2026-07-23 19:24:10 | INFO     | factory_agent.output_writer | Report written
+2026-07-23 19:36:50 | INFO     | factory_agent.harness | Processing query
+2026-07-23 19:36:50 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 19:36:53 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 19:37:20 | INFO     | factory_agent.harness | Processing query
+2026-07-23 19:37:20 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 19:37:21 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 19:38:52 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 19:39:04 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 19:39:55 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 19:40:02 | INFO     | factory_agent.harness | Processing query
+2026-07-23 19:40:02 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 19:40:07 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 19:40:33 | INFO     | factory_agent.harness | Processing query
+2026-07-23 19:40:33 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 19:40:35 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 19:52:51 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-23 19:52:51 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 19:52:51 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-23 19:52:51 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 19:52:51 | INFO     | factory_agent.harness | Processing query
+2026-07-23 19:52:51 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 19:52:51 | INFO     | factory_agent.skill_selector | Skill selected
+2026-07-23 19:52:51 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 19:52:51 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-23 19:52:51 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 19:52:51 | INFO     | factory_agent.harness | Processing query
+2026-07-23 19:52:51 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 19:52:51 | INFO     | factory_agent.skill_selector | Skill selected
+2026-07-23 19:52:51 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 19:52:51 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-23 19:52:51 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 19:52:51 | INFO     | factory_agent.harness | Processing query
+2026-07-23 19:52:51 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 19:52:51 | INFO     | factory_agent.skill_selector | Skill selected
+2026-07-23 19:52:52 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 19:52:52 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-23 19:52:52 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 19:52:52 | INFO     | factory_agent.harness | Processing query
+2026-07-23 19:52:52 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 19:52:52 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 19:52:52 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-23 19:52:52 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 19:52:52 | INFO     | factory_agent.harness | Processing query
+2026-07-23 19:52:52 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 19:52:52 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 19:52:52 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-23 19:52:52 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 19:52:52 | INFO     | factory_agent.harness | Processing query
+2026-07-23 19:52:52 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 19:52:52 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 19:52:52 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-23 19:52:52 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 19:52:52 | INFO     | factory_agent.harness | Processing query
+2026-07-23 19:52:52 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 19:52:52 | INFO     | factory_agent.skill_selector | Skill selected
+2026-07-23 19:52:52 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 19:52:52 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 19:52:52 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 19:53:40 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-23 19:53:40 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 19:53:40 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-23 19:53:40 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 19:53:40 | INFO     | factory_agent.harness | Processing query
+2026-07-23 19:53:40 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 19:53:40 | INFO     | factory_agent.skill_selector | Skill selected
+2026-07-23 19:53:41 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 19:53:41 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-23 19:53:41 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 19:53:41 | INFO     | factory_agent.harness | Processing query
+2026-07-23 19:53:41 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 19:53:41 | INFO     | factory_agent.skill_selector | Skill selected
+2026-07-23 19:53:41 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 19:53:41 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-23 19:53:41 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 19:53:41 | INFO     | factory_agent.harness | Processing query
+2026-07-23 19:53:41 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 19:53:41 | INFO     | factory_agent.skill_selector | Skill selected
+2026-07-23 19:53:41 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 19:53:41 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-23 19:53:41 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 19:53:41 | INFO     | factory_agent.harness | Processing query
+2026-07-23 19:53:41 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 19:53:41 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 19:53:41 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-23 19:53:41 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 19:53:41 | INFO     | factory_agent.harness | Processing query
+2026-07-23 19:53:41 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 19:53:41 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 19:53:41 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-23 19:53:41 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 19:53:41 | INFO     | factory_agent.harness | Processing query
+2026-07-23 19:53:41 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 19:53:41 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 19:53:41 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-23 19:53:41 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 19:53:41 | INFO     | factory_agent.harness | Processing query
+2026-07-23 19:53:41 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 19:53:41 | INFO     | factory_agent.skill_selector | Skill selected
+2026-07-23 19:53:41 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 19:53:41 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-23 19:53:41 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 19:53:41 | INFO     | factory_agent.harness | Processing query
+2026-07-23 19:53:41 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 19:53:41 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 19:53:41 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 19:53:41 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 19:53:52 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-23 19:53:52 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 19:53:52 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-23 19:53:52 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 19:53:52 | INFO     | factory_agent.harness | Processing query
+2026-07-23 19:53:52 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 19:53:52 | INFO     | factory_agent.skill_selector | Skill selected
+2026-07-23 19:53:52 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 19:53:52 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-23 19:53:52 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 19:53:52 | INFO     | factory_agent.harness | Processing query
+2026-07-23 19:53:52 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 19:53:52 | INFO     | factory_agent.skill_selector | Skill selected
+2026-07-23 19:53:52 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 19:53:52 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-23 19:53:52 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 19:53:52 | INFO     | factory_agent.harness | Processing query
+2026-07-23 19:53:52 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 19:53:52 | INFO     | factory_agent.skill_selector | Skill selected
+2026-07-23 19:53:52 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 19:53:52 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-23 19:53:52 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 19:53:52 | INFO     | factory_agent.harness | Processing query
+2026-07-23 19:53:52 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 19:53:52 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 19:53:52 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-23 19:53:52 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 19:53:52 | INFO     | factory_agent.harness | Processing query
+2026-07-23 19:53:52 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 19:53:52 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 19:53:52 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-23 19:53:52 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 19:53:52 | INFO     | factory_agent.harness | Processing query
+2026-07-23 19:53:52 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 19:53:52 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 19:53:52 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-23 19:53:52 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 19:53:52 | INFO     | factory_agent.harness | Processing query
+2026-07-23 19:53:52 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 19:53:52 | INFO     | factory_agent.skill_selector | Skill selected
+2026-07-23 19:53:52 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 19:53:52 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-23 19:53:52 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 19:53:52 | INFO     | factory_agent.harness | Processing query
+2026-07-23 19:53:52 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 19:53:52 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 19:53:52 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 19:53:52 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 19:53:52 | INFO     | factory_agent.output_writer | Report written
+2026-07-23 19:53:52 | INFO     | factory_agent.output_writer | Report written
+2026-07-23 19:54:06 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-23 19:54:06 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 19:54:06 | INFO     | factory_agent.harness | Processing query
+2026-07-23 19:54:06 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 19:54:06 | INFO     | factory_agent.skill_selector | Skill selected
+2026-07-23 19:54:06 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 19:54:06 | INFO     | factory_agent.harness | Processing query
+2026-07-23 19:54:06 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 19:54:06 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 19:54:06 | INFO     | factory_agent.harness | Processing query
+2026-07-23 19:54:06 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 19:54:06 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 19:54:06 | INFO     | factory_agent.harness | Processing query
+2026-07-23 19:54:06 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 19:54:06 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 19:55:11 | INFO     | factory_agent.harness | Processing query
+2026-07-23 19:55:11 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 19:55:15 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 20:01:42 | INFO     | factory_agent.harness | Processing query
+2026-07-23 20:01:42 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 20:01:47 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 20:08:35 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-23 20:08:35 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 20:08:35 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-23 20:08:35 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 20:08:35 | INFO     | factory_agent.harness | Processing query
+2026-07-23 20:08:35 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 20:08:37 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-23 20:08:37 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 20:08:37 | INFO     | factory_agent.harness | Processing query
+2026-07-23 20:08:37 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 20:08:37 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-23 20:08:37 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 20:08:37 | INFO     | factory_agent.harness | Processing query
+2026-07-23 20:08:37 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 20:08:37 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-23 20:08:37 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 20:08:37 | INFO     | factory_agent.harness | Processing query
+2026-07-23 20:08:37 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 20:08:37 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-23 20:08:37 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 20:08:37 | INFO     | factory_agent.harness | Processing query
+2026-07-23 20:08:37 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 20:08:37 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-23 20:08:37 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 20:08:37 | INFO     | factory_agent.harness | Processing query
+2026-07-23 20:08:37 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 20:08:37 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-23 20:08:37 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 20:08:37 | INFO     | factory_agent.harness | Processing query
+2026-07-23 20:08:37 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 20:08:37 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-23 20:08:37 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 20:08:37 | INFO     | factory_agent.harness | Processing query
+2026-07-23 20:08:37 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 20:08:37 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 20:08:37 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 20:10:02 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-23 20:10:02 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 20:10:02 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-23 20:10:02 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 20:10:02 | INFO     | factory_agent.harness | Processing query
+2026-07-23 20:10:02 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 20:10:02 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-23 20:10:02 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 20:10:02 | INFO     | factory_agent.harness | Processing query
+2026-07-23 20:10:03 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 20:10:03 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-23 20:10:03 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 20:10:03 | INFO     | factory_agent.harness | Processing query
+2026-07-23 20:10:03 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 20:10:03 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-23 20:10:03 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 20:10:03 | INFO     | factory_agent.harness | Processing query
+2026-07-23 20:10:03 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 20:10:03 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-23 20:10:03 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 20:10:03 | INFO     | factory_agent.harness | Processing query
+2026-07-23 20:10:03 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 20:10:03 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-23 20:10:03 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 20:10:03 | INFO     | factory_agent.harness | Processing query
+2026-07-23 20:10:03 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 20:10:03 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-23 20:10:03 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 20:10:03 | INFO     | factory_agent.harness | Processing query
+2026-07-23 20:10:03 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 20:10:04 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-23 20:10:04 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 20:10:04 | INFO     | factory_agent.harness | Processing query
+2026-07-23 20:10:04 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 20:10:04 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-23 20:10:04 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 20:10:04 | INFO     | factory_agent.harness | Processing query
+2026-07-23 20:10:04 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 20:10:04 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 20:10:04 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 20:10:49 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-23 20:10:49 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 20:10:49 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-23 20:10:49 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 20:10:49 | INFO     | factory_agent.harness | Processing query
+2026-07-23 20:10:49 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 20:10:49 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-23 20:10:49 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 20:10:49 | INFO     | factory_agent.harness | Processing query
+2026-07-23 20:10:49 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 20:10:49 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-23 20:10:49 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 20:10:49 | INFO     | factory_agent.harness | Processing query
+2026-07-23 20:10:50 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 20:10:50 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-23 20:10:50 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 20:10:50 | INFO     | factory_agent.harness | Processing query
+2026-07-23 20:10:50 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 20:10:50 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-23 20:10:50 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 20:10:50 | INFO     | factory_agent.harness | Processing query
+2026-07-23 20:10:50 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 20:10:50 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-23 20:10:50 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 20:10:50 | INFO     | factory_agent.harness | Processing query
+2026-07-23 20:10:50 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 20:10:50 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-23 20:10:50 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 20:10:50 | INFO     | factory_agent.harness | Processing query
+2026-07-23 20:10:50 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 20:10:50 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-23 20:10:50 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 20:10:50 | INFO     | factory_agent.harness | Processing query
+2026-07-23 20:10:50 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 20:10:50 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-23 20:10:50 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 20:10:50 | INFO     | factory_agent.harness | Processing query
+2026-07-23 20:10:50 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 20:10:50 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 20:10:50 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 20:11:08 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-23 20:11:08 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 20:11:08 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-23 20:11:08 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 20:11:08 | INFO     | factory_agent.harness | Processing query
+2026-07-23 20:11:08 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 20:11:08 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-23 20:11:08 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 20:11:08 | INFO     | factory_agent.harness | Processing query
+2026-07-23 20:11:08 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 20:11:08 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-23 20:11:08 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 20:11:08 | INFO     | factory_agent.harness | Processing query
+2026-07-23 20:11:08 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 20:11:08 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-23 20:11:08 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 20:11:08 | INFO     | factory_agent.harness | Processing query
+2026-07-23 20:11:08 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 20:11:08 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-23 20:11:08 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 20:11:08 | INFO     | factory_agent.harness | Processing query
+2026-07-23 20:11:08 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 20:11:08 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-23 20:11:08 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 20:11:08 | INFO     | factory_agent.harness | Processing query
+2026-07-23 20:11:08 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 20:11:08 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-23 20:11:08 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 20:11:08 | INFO     | factory_agent.harness | Processing query
+2026-07-23 20:11:08 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 20:11:08 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-23 20:11:08 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 20:11:08 | INFO     | factory_agent.harness | Processing query
+2026-07-23 20:11:08 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 20:11:08 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-23 20:11:08 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 20:11:08 | INFO     | factory_agent.harness | Processing query
+2026-07-23 20:11:08 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 20:11:08 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 20:11:08 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 20:11:10 | INFO     | factory_agent.output_writer | Report written
+2026-07-23 20:11:10 | INFO     | factory_agent.output_writer | Report written
+2026-07-23 20:11:34 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-23 20:11:34 | INFO     | factory_agent | AgentHarness initialized
+2026-07-23 20:11:34 | INFO     | factory_agent.harness | Processing query
+2026-07-23 20:11:34 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 20:11:34 | INFO     | factory_agent.harness | Processing query
+2026-07-23 20:11:34 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 20:11:34 | INFO     | factory_agent.harness | Processing query
+2026-07-23 20:11:34 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 20:11:34 | INFO     | factory_agent.harness | Processing query
+2026-07-23 20:11:34 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 20:39:41 | INFO     | factory_agent.harness | Processing query
+2026-07-23 20:39:41 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 20:39:44 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 20:40:48 | INFO     | factory_agent.harness | Processing query
+2026-07-23 20:40:48 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 20:40:54 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 20:41:38 | INFO     | factory_agent.harness | Processing query
+2026-07-23 20:41:38 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 20:41:41 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 20:42:19 | INFO     | factory_agent.harness | Processing query
+2026-07-23 20:42:19 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 20:42:21 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-23 21:19:21 | INFO     | factory_agent.harness | Processing query
+2026-07-23 21:19:21 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-23 21:19:24 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-25 17:02:02 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-25 17:02:02 | INFO     | factory_agent | AgentHarness initialized — three-layer wiki pattern
+2026-07-25 17:02:02 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-25 17:02:02 | INFO     | factory_agent | AgentHarness initialized — three-layer wiki pattern
+2026-07-25 17:02:02 | INFO     | factory_agent.harness | Processing query
+2026-07-25 17:02:02 | INFO     | factory_agent.wiki_manager | Wiki page written
+2026-07-25 17:02:03 | INFO     | factory_agent.wiki_manager | Wiki page written
+2026-07-25 17:02:03 | INFO     | factory_agent.wiki_manager | Wiki page written
+2026-07-25 17:02:03 | INFO     | factory_agent.wiki_manager | Wiki page written
+2026-07-25 17:02:03 | INFO     | factory_agent.wiki_manager | Wiki page written
+2026-07-25 17:02:03 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-25 17:02:04 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-25 17:02:04 | INFO     | factory_agent | AgentHarness initialized — three-layer wiki pattern
+2026-07-25 17:02:04 | INFO     | factory_agent.harness | Processing query
+2026-07-25 17:02:04 | INFO     | factory_agent.wiki_manager | Wiki page written
+2026-07-25 17:02:04 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-25 17:02:04 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-25 17:02:04 | INFO     | factory_agent | AgentHarness initialized — three-layer wiki pattern
+2026-07-25 17:02:04 | INFO     | factory_agent.harness | Processing query
+2026-07-25 17:02:04 | INFO     | factory_agent.wiki_manager | Wiki page written
+2026-07-25 17:02:04 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-25 17:02:04 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-25 17:02:04 | INFO     | factory_agent | AgentHarness initialized — three-layer wiki pattern
+2026-07-25 17:02:04 | INFO     | factory_agent.harness | Processing query
+2026-07-25 17:02:04 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-25 17:02:04 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-25 17:02:04 | INFO     | factory_agent | AgentHarness initialized — three-layer wiki pattern
+2026-07-25 17:02:04 | INFO     | factory_agent.harness | Processing query
+2026-07-25 17:02:04 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-25 17:02:04 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-25 17:02:04 | INFO     | factory_agent | AgentHarness initialized — three-layer wiki pattern
+2026-07-25 17:02:04 | INFO     | factory_agent.harness | Processing query
+2026-07-25 17:02:04 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-25 17:02:04 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-25 17:02:04 | INFO     | factory_agent | AgentHarness initialized — three-layer wiki pattern
+2026-07-25 17:02:04 | INFO     | factory_agent.harness | Processing query
+2026-07-25 17:02:04 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-25 17:02:04 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-25 17:02:04 | INFO     | factory_agent | AgentHarness initialized — three-layer wiki pattern
+2026-07-25 17:02:04 | INFO     | factory_agent.harness | Processing query
+2026-07-25 17:02:04 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-25 17:02:04 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-25 17:02:04 | INFO     | factory_agent | AgentHarness initialized — three-layer wiki pattern
+2026-07-25 17:02:04 | INFO     | factory_agent.harness | Processing query
+2026-07-25 17:02:05 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-25 17:02:05 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-25 17:02:05 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-25 17:02:07 | INFO     | factory_agent.output_writer | Report written
+2026-07-25 17:02:07 | INFO     | factory_agent.output_writer | Report written
+2026-07-25 17:02:46 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-25 17:02:46 | INFO     | factory_agent | AgentHarness initialized — three-layer wiki pattern
+2026-07-25 17:02:46 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-25 17:02:46 | INFO     | factory_agent | AgentHarness initialized — three-layer wiki pattern
+2026-07-25 17:02:46 | INFO     | factory_agent.harness | Processing query
+2026-07-25 17:02:46 | INFO     | factory_agent.wiki_manager | Wiki page written
+2026-07-25 17:02:46 | INFO     | factory_agent.wiki_manager | Wiki page written
+2026-07-25 17:02:46 | INFO     | factory_agent.wiki_manager | Wiki page written
+2026-07-25 17:02:46 | INFO     | factory_agent.wiki_manager | Wiki page written
+2026-07-25 17:02:46 | INFO     | factory_agent.wiki_manager | Wiki page written
+2026-07-25 17:02:46 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-25 17:02:46 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-25 17:02:46 | INFO     | factory_agent | AgentHarness initialized — three-layer wiki pattern
+2026-07-25 17:02:46 | INFO     | factory_agent.harness | Processing query
+2026-07-25 17:02:46 | INFO     | factory_agent.wiki_manager | Wiki page written
+2026-07-25 17:02:46 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-25 17:02:46 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-25 17:02:46 | INFO     | factory_agent | AgentHarness initialized — three-layer wiki pattern
+2026-07-25 17:02:46 | INFO     | factory_agent.harness | Processing query
+2026-07-25 17:02:46 | INFO     | factory_agent.wiki_manager | Wiki page written
+2026-07-25 17:02:46 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-25 17:02:46 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-25 17:02:46 | INFO     | factory_agent | AgentHarness initialized — three-layer wiki pattern
+2026-07-25 17:02:46 | INFO     | factory_agent.harness | Processing query
+2026-07-25 17:02:46 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-25 17:02:46 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-25 17:02:46 | INFO     | factory_agent | AgentHarness initialized — three-layer wiki pattern
+2026-07-25 17:02:46 | INFO     | factory_agent.harness | Processing query
+2026-07-25 17:02:46 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-25 17:02:46 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-25 17:02:46 | INFO     | factory_agent | AgentHarness initialized — three-layer wiki pattern
+2026-07-25 17:02:46 | INFO     | factory_agent.harness | Processing query
+2026-07-25 17:02:46 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-25 17:02:46 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-25 17:02:46 | INFO     | factory_agent | AgentHarness initialized — three-layer wiki pattern
+2026-07-25 17:02:46 | INFO     | factory_agent.harness | Processing query
+2026-07-25 17:02:46 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-25 17:02:46 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-25 17:02:46 | INFO     | factory_agent | AgentHarness initialized — three-layer wiki pattern
+2026-07-25 17:02:46 | INFO     | factory_agent.harness | Processing query
+2026-07-25 17:02:46 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-25 17:02:46 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-25 17:02:46 | INFO     | factory_agent | AgentHarness initialized — three-layer wiki pattern
+2026-07-25 17:02:46 | INFO     | factory_agent.harness | Processing query
+2026-07-25 17:02:46 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-25 17:02:46 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-25 17:02:46 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-25 17:02:46 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-25 17:02:46 | INFO     | factory_agent | AgentHarness initialized — three-layer wiki pattern
+2026-07-25 17:02:46 | INFO     | factory_agent.harness | Processing query
+2026-07-25 17:02:48 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-25 17:02:48 | INFO     | factory_agent | AgentHarness initialized — three-layer wiki pattern
+2026-07-25 17:02:48 | INFO     | factory_agent.harness | Processing query
+2026-07-25 17:02:48 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-25 17:02:48 | INFO     | factory_agent | AgentHarness initialized — three-layer wiki pattern
+2026-07-25 17:02:48 | INFO     | factory_agent.harness | Processing query
+2026-07-25 17:02:49 | INFO     | factory_agent.output_writer | Report written
+2026-07-25 17:02:49 | INFO     | factory_agent.output_writer | Report written
+2026-07-25 17:03:13 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-25 17:03:13 | INFO     | factory_agent | AgentHarness initialized — three-layer wiki pattern
+2026-07-25 17:03:13 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-25 17:03:13 | INFO     | factory_agent | AgentHarness initialized — three-layer wiki pattern
+2026-07-25 17:03:13 | INFO     | factory_agent.harness | Processing query
+2026-07-25 17:03:13 | INFO     | factory_agent.wiki_manager | Wiki page written
+2026-07-25 17:03:13 | INFO     | factory_agent.wiki_manager | Wiki page written
+2026-07-25 17:03:13 | INFO     | factory_agent.wiki_manager | Wiki page written
+2026-07-25 17:03:13 | INFO     | factory_agent.wiki_manager | Wiki page written
+2026-07-25 17:03:13 | INFO     | factory_agent.wiki_manager | Wiki page written
+2026-07-25 17:03:13 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-25 17:03:13 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-25 17:03:13 | INFO     | factory_agent | AgentHarness initialized — three-layer wiki pattern
+2026-07-25 17:03:13 | INFO     | factory_agent.harness | Processing query
+2026-07-25 17:03:13 | INFO     | factory_agent.wiki_manager | Wiki page written
+2026-07-25 17:03:13 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-25 17:03:13 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-25 17:03:13 | INFO     | factory_agent | AgentHarness initialized — three-layer wiki pattern
+2026-07-25 17:03:13 | INFO     | factory_agent.harness | Processing query
+2026-07-25 17:03:13 | INFO     | factory_agent.wiki_manager | Wiki page written
+2026-07-25 17:03:13 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-25 17:03:13 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-25 17:03:13 | INFO     | factory_agent | AgentHarness initialized — three-layer wiki pattern
+2026-07-25 17:03:13 | INFO     | factory_agent.harness | Processing query
+2026-07-25 17:03:13 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-25 17:03:13 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-25 17:03:13 | INFO     | factory_agent | AgentHarness initialized — three-layer wiki pattern
+2026-07-25 17:03:13 | INFO     | factory_agent.harness | Processing query
+2026-07-25 17:03:13 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-25 17:03:13 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-25 17:03:13 | INFO     | factory_agent | AgentHarness initialized — three-layer wiki pattern
+2026-07-25 17:03:13 | INFO     | factory_agent.harness | Processing query
+2026-07-25 17:03:13 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-25 17:03:13 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-25 17:03:13 | INFO     | factory_agent | AgentHarness initialized — three-layer wiki pattern
+2026-07-25 17:03:13 | INFO     | factory_agent.harness | Processing query
+2026-07-25 17:03:13 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-25 17:03:13 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-25 17:03:13 | INFO     | factory_agent | AgentHarness initialized — three-layer wiki pattern
+2026-07-25 17:03:13 | INFO     | factory_agent.harness | Processing query
+2026-07-25 17:03:13 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-25 17:03:13 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-25 17:03:13 | INFO     | factory_agent | AgentHarness initialized — three-layer wiki pattern
+2026-07-25 17:03:13 | INFO     | factory_agent.harness | Processing query
+2026-07-25 17:03:13 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-25 17:03:13 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-25 17:03:13 | INFO     | factory_agent.intent_detector | Intent detected
+2026-07-25 17:03:13 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-25 17:03:13 | INFO     | factory_agent | AgentHarness initialized — three-layer wiki pattern
+2026-07-25 17:03:13 | INFO     | factory_agent.harness | Processing query
+2026-07-25 17:03:13 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-25 17:03:13 | INFO     | factory_agent | AgentHarness initialized — three-layer wiki pattern
+2026-07-25 17:03:13 | INFO     | factory_agent.harness | Processing query
+2026-07-25 17:03:13 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-25 17:03:13 | INFO     | factory_agent | AgentHarness initialized — three-layer wiki pattern
+2026-07-25 17:03:13 | INFO     | factory_agent.harness | Processing query
+2026-07-25 17:03:14 | INFO     | factory_agent.output_writer | Report written
+2026-07-25 17:03:14 | INFO     | factory_agent.output_writer | Report written
+2026-07-25 17:04:21 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-25 17:04:21 | INFO     | factory_agent | AgentHarness initialized — three-layer wiki pattern
+2026-07-25 17:04:21 | INFO     | factory_agent.harness | Processing query
+2026-07-25 17:04:23 | INFO     | factory_agent.wiki_manager | Wiki page written
+2026-07-25 17:04:23 | INFO     | factory_agent.wiki_manager | Wiki page written
+2026-07-25 17:04:23 | INFO     | factory_agent.wiki_manager | Wiki page written
+2026-07-25 17:04:23 | INFO     | factory_agent.wiki_manager | Wiki page written
+2026-07-25 17:04:23 | INFO     | factory_agent.wiki_manager | Wiki page written
+2026-07-25 17:04:26 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-25 17:04:26 | INFO     | factory_agent.harness | Processing query
+2026-07-25 17:04:28 | INFO     | factory_agent.wiki_manager | Wiki page written
+2026-07-25 17:04:31 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-25 17:04:31 | INFO     | factory_agent.harness | Processing query
+2026-07-25 17:04:32 | INFO     | factory_agent.wiki_manager | Wiki page written
+2026-07-25 17:04:39 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-25 17:04:39 | INFO     | factory_agent.harness | Processing query
+2026-07-25 17:04:39 | INFO     | factory_agent.harness | Processing query
+2026-07-25 17:04:39 | INFO     | factory_agent.harness | Processing query
+2026-07-25 17:04:39 | INFO     | factory_agent.harness | Processing query
+2026-07-28 21:10:06 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-28 21:10:06 | INFO     | factory_agent | AgentHarness initialized — three-layer wiki pattern
+2026-07-28 21:10:38 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-28 21:10:38 | INFO     | factory_agent | AgentHarness initialized — three-layer wiki pattern
+2026-07-28 21:10:38 | INFO     | factory_agent.harness | Processing query
+2026-07-28 21:10:40 | INFO     | factory_agent.wiki_manager | Wiki page written
+2026-07-28 21:10:40 | INFO     | factory_agent.wiki_manager | Wiki page written
+2026-07-28 21:10:40 | INFO     | factory_agent.wiki_manager | Wiki page written
+2026-07-28 21:10:40 | INFO     | factory_agent.wiki_manager | Wiki page written
+2026-07-28 21:10:40 | INFO     | factory_agent.wiki_manager | Wiki page written
+2026-07-28 21:10:43 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-28 21:11:00 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-28 21:11:00 | INFO     | factory_agent | AgentHarness initialized — three-layer wiki pattern
+2026-07-28 21:11:32 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-28 21:11:32 | INFO     | factory_agent | AgentHarness initialized — three-layer wiki pattern
+2026-07-28 21:11:51 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-28 21:11:51 | INFO     | factory_agent | AgentHarness initialized — three-layer wiki pattern
+2026-07-28 21:13:05 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-28 21:13:05 | INFO     | factory_agent | AgentHarness initialized — three-layer wiki pattern
+2026-07-28 21:13:14 | INFO     | factory_agent.harness | Processing query
+2026-07-28 21:13:19 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-28 21:13:48 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-28 21:13:48 | INFO     | factory_agent | AgentHarness initialized — three-layer wiki pattern
+2026-07-28 21:13:56 | INFO     | factory_agent.harness | Processing query
+2026-07-28 21:13:57 | INFO     | factory_agent.wiki_manager | Wiki page written
+2026-07-28 21:14:00 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-28 21:14:54 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-28 21:14:54 | INFO     | factory_agent | AgentHarness initialized — three-layer wiki pattern
+2026-07-28 21:16:35 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-28 21:16:35 | INFO     | factory_agent | AgentHarness initialized — three-layer wiki pattern
+2026-07-28 21:18:40 | INFO     | factory_agent.harness | Processing query
+2026-07-28 21:18:47 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-28 21:19:17 | INFO     | factory_agent.harness | Processing query
+2026-07-28 21:19:23 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-28 21:21:02 | INFO     | factory_agent.harness | Processing query
+2026-07-28 21:21:05 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-28 21:21:15 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-28 21:21:15 | INFO     | factory_agent | AgentHarness initialized — three-layer wiki pattern
+2026-07-28 21:21:21 | INFO     | factory_agent.harness | Processing query
+2026-07-28 21:21:27 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-28 21:21:31 | INFO     | factory_agent.harness | Processing query
+2026-07-28 21:21:35 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-28 21:23:13 | INFO     | factory_agent.harness | Processing query
+2026-07-28 21:23:18 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-28 21:23:24 | INFO     | factory_agent.harness | Processing query
+2026-07-28 21:23:26 | INFO     | factory_agent.wiki_manager | Wiki page written
+2026-07-28 21:23:26 | INFO     | factory_agent.wiki_manager | Wiki page written
+2026-07-28 21:23:26 | INFO     | factory_agent.wiki_manager | Wiki page written
+2026-07-28 21:23:26 | INFO     | factory_agent.wiki_manager | Wiki page written
+2026-07-28 21:23:26 | INFO     | factory_agent.wiki_manager | Wiki page written
+2026-07-28 21:23:29 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-28 21:25:43 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-28 21:25:43 | INFO     | factory_agent | AgentHarness initialized — three-layer wiki pattern
+2026-07-28 21:25:52 | INFO     | factory_agent.harness | Processing query
+2026-07-28 21:25:54 | INFO     | factory_agent.wiki_manager | Wiki page written
+2026-07-28 21:25:54 | INFO     | factory_agent.wiki_manager | Wiki page written
+2026-07-28 21:25:54 | INFO     | factory_agent.wiki_manager | Wiki page written
+2026-07-28 21:25:54 | INFO     | factory_agent.wiki_manager | Wiki page written
+2026-07-28 21:25:54 | INFO     | factory_agent.wiki_manager | Wiki page written
+2026-07-28 21:25:55 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-28 21:26:14 | INFO     | factory_agent.harness | Processing query
+2026-07-28 21:26:17 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-28 21:26:26 | INFO     | factory_agent.harness | Processing query
+2026-07-28 21:26:30 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-28 21:26:47 | INFO     | factory_agent.harness | Processing query
+2026-07-28 21:26:57 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-28 21:27:34 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-28 21:27:34 | INFO     | factory_agent | AgentHarness initialized — three-layer wiki pattern
+2026-07-28 21:29:30 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-28 21:29:30 | INFO     | factory_agent | AgentHarness initialized — three-layer wiki pattern
+2026-07-28 21:29:56 | INFO     | factory_agent.harness | Processing query
+2026-07-28 21:30:00 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-28 21:32:18 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-28 21:32:18 | INFO     | factory_agent | AgentHarness initialized — three-layer wiki pattern
+2026-07-28 21:33:08 | INFO     | factory_agent.harness | Processing query
+2026-07-28 21:33:11 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-28 21:33:23 | INFO     | factory_agent.harness | Processing query
+2026-07-28 21:33:29 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-28 21:33:59 | INFO     | factory_agent.harness | Processing query
+2026-07-28 21:34:04 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-28 21:36:20 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-28 21:36:20 | INFO     | factory_agent | AgentHarness initialized — three-layer wiki pattern
+2026-07-28 21:49:47 | INFO     | factory_agent.harness | Processing query
+2026-07-28 21:49:55 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-28 21:50:01 | INFO     | factory_agent.harness | Processing query
+2026-07-28 21:50:04 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-28 21:50:41 | INFO     | factory_agent.harness | Processing query
+2026-07-28 21:50:45 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-28 21:51:12 | INFO     | factory_agent.harness | Processing query
+2026-07-28 21:51:16 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-28 21:51:40 | INFO     | factory_agent.harness | Processing query
+2026-07-28 21:51:42 | INFO     | factory_agent.wiki_manager | Wiki page written
+2026-07-28 21:51:47 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-28 21:52:28 | INFO     | factory_agent.harness | Processing query
+2026-07-28 21:52:37 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-28 21:52:49 | INFO     | factory_agent.harness | Processing query
+2026-07-28 21:52:53 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-28 21:53:07 | INFO     | factory_agent.harness | Processing query
+2026-07-28 21:53:10 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-07-28 21:53:44 | INFO     | factory_agent.harness | Processing query
+2026-07-28 21:53:50 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-08-03 11:11:58 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-08-03 11:11:58 | INFO     | factory_agent | AgentHarness initialized — three-layer wiki pattern
+2026-08-03 11:11:58 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-08-03 11:11:58 | INFO     | factory_agent | AgentHarness initialized — three-layer wiki pattern
+2026-08-03 11:11:58 | INFO     | factory_agent.harness | Processing query
+2026-08-03 11:11:59 | INFO     | factory_agent.wiki_manager | Wiki page written
+2026-08-03 11:11:59 | INFO     | factory_agent.wiki_manager | Wiki page written
+2026-08-03 11:11:59 | INFO     | factory_agent.wiki_manager | Wiki page written
+2026-08-03 11:11:59 | INFO     | factory_agent.wiki_manager | Wiki page written
+2026-08-03 11:11:59 | INFO     | factory_agent.wiki_manager | Wiki page written
+2026-08-03 11:12:00 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-08-03 11:12:00 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-08-03 11:12:00 | INFO     | factory_agent | AgentHarness initialized — three-layer wiki pattern
+2026-08-03 11:12:00 | INFO     | factory_agent.harness | Processing query
+2026-08-03 11:12:00 | INFO     | factory_agent.wiki_manager | Wiki page written
+2026-08-03 11:12:00 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-08-03 11:12:00 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-08-03 11:12:00 | INFO     | factory_agent | AgentHarness initialized — three-layer wiki pattern
+2026-08-03 11:12:00 | INFO     | factory_agent.harness | Processing query
+2026-08-03 11:12:01 | INFO     | factory_agent.wiki_manager | Wiki page written
+2026-08-03 11:12:01 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-08-03 11:12:01 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-08-03 11:12:01 | INFO     | factory_agent | AgentHarness initialized — three-layer wiki pattern
+2026-08-03 11:12:01 | INFO     | factory_agent.harness | Processing query
+2026-08-03 11:12:01 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-08-03 11:12:01 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-08-03 11:12:01 | INFO     | factory_agent | AgentHarness initialized — three-layer wiki pattern
+2026-08-03 11:12:01 | INFO     | factory_agent.harness | Processing query
+2026-08-03 11:12:01 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-08-03 11:12:01 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-08-03 11:12:01 | INFO     | factory_agent | AgentHarness initialized — three-layer wiki pattern
+2026-08-03 11:12:01 | INFO     | factory_agent.harness | Processing query
+2026-08-03 11:12:01 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-08-03 11:12:02 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-08-03 11:12:02 | INFO     | factory_agent | AgentHarness initialized — three-layer wiki pattern
+2026-08-03 11:12:02 | INFO     | factory_agent.harness | Processing query
+2026-08-03 11:12:02 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-08-03 11:12:05 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-08-03 11:12:05 | INFO     | factory_agent | AgentHarness initialized — three-layer wiki pattern
+2026-08-03 11:12:05 | INFO     | factory_agent.harness | Processing query
+2026-08-03 11:12:05 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-08-03 11:12:05 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-08-03 11:12:05 | INFO     | factory_agent | AgentHarness initialized — three-layer wiki pattern
+2026-08-03 11:12:05 | INFO     | factory_agent.harness | Processing query
+2026-08-03 11:12:06 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-08-03 11:12:06 | INFO     | factory_agent.intent_detector | Intent detected
+2026-08-03 11:12:06 | INFO     | factory_agent.intent_detector | Intent detected
+2026-08-03 11:12:06 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-08-03 11:12:06 | INFO     | factory_agent | AgentHarness initialized — three-layer wiki pattern
+2026-08-03 11:12:06 | INFO     | factory_agent.harness | Processing query
+2026-08-03 11:12:06 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-08-03 11:12:06 | INFO     | factory_agent | AgentHarness initialized — three-layer wiki pattern
+2026-08-03 11:12:06 | INFO     | factory_agent.harness | Processing query
+2026-08-03 11:12:06 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-08-03 11:12:06 | INFO     | factory_agent | AgentHarness initialized — three-layer wiki pattern
+2026-08-03 11:12:06 | INFO     | factory_agent.harness | Processing query
+2026-08-03 11:12:12 | INFO     | factory_agent.output_writer | Report written
+2026-08-03 11:12:12 | INFO     | factory_agent.output_writer | Report written
+2026-08-03 11:12:12 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-08-03 11:12:12 | INFO     | factory_agent | AgentHarness initialized — three-layer wiki pattern
+2026-08-03 11:12:12 | INFO     | factory_agent.harness | Processing query
+2026-08-03 11:12:12 | INFO     | factory_agent.wiki_manager | Wiki page written
+2026-08-03 11:12:12 | INFO     | factory_agent.wiki_manager | Wiki page written
+2026-08-03 11:12:12 | INFO     | factory_agent.wiki_manager | Wiki page written
+2026-08-03 11:12:12 | INFO     | factory_agent.wiki_manager | Wiki page written
+2026-08-03 11:12:13 | INFO     | factory_agent.wiki_manager | Wiki page written
+2026-08-03 11:12:13 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-08-03 11:12:13 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-08-03 11:12:13 | INFO     | factory_agent | AgentHarness initialized — three-layer wiki pattern
+2026-08-03 11:12:13 | INFO     | factory_agent.harness | Processing query
+2026-08-03 11:12:13 | INFO     | factory_agent.wiki_manager | Wiki page written
+2026-08-03 11:12:13 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-08-03 11:12:13 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-08-03 11:12:13 | INFO     | factory_agent | AgentHarness initialized — three-layer wiki pattern
+2026-08-03 11:12:13 | INFO     | factory_agent.harness | Processing query
+2026-08-03 11:12:13 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-08-03 11:14:38 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-08-03 11:14:38 | INFO     | factory_agent | AgentHarness initialized — three-layer wiki pattern
+2026-08-03 11:14:38 | INFO     | factory_agent.harness | Processing query
+2026-08-03 11:14:38 | INFO     | factory_agent.wiki_manager | Wiki page written
+2026-08-03 11:14:38 | INFO     | factory_agent.wiki_manager | Wiki page written
+2026-08-03 11:14:38 | INFO     | factory_agent.wiki_manager | Wiki page written
+2026-08-03 11:14:38 | INFO     | factory_agent.wiki_manager | Wiki page written
+2026-08-03 11:14:38 | INFO     | factory_agent.wiki_manager | Wiki page written
+2026-08-03 11:14:38 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-08-03 11:14:38 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-08-03 11:14:38 | INFO     | factory_agent | AgentHarness initialized — three-layer wiki pattern
+2026-08-03 11:14:38 | INFO     | factory_agent.harness | Processing query
+2026-08-03 11:14:38 | INFO     | factory_agent.wiki_manager | Wiki page written
+2026-08-03 11:14:38 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-08-03 11:14:38 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-08-03 11:14:38 | INFO     | factory_agent | AgentHarness initialized — three-layer wiki pattern
+2026-08-03 11:14:38 | INFO     | factory_agent.harness | Processing query
+2026-08-03 11:14:38 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-08-03 11:14:48 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-08-03 11:14:48 | INFO     | factory_agent | AgentHarness initialized — three-layer wiki pattern
+2026-08-03 11:14:48 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-08-03 11:14:48 | INFO     | factory_agent | AgentHarness initialized — three-layer wiki pattern
+2026-08-03 11:14:48 | INFO     | factory_agent.harness | Processing query
+2026-08-03 11:14:48 | INFO     | factory_agent.wiki_manager | Wiki page written
+2026-08-03 11:14:48 | INFO     | factory_agent.wiki_manager | Wiki page written
+2026-08-03 11:14:48 | INFO     | factory_agent.wiki_manager | Wiki page written
+2026-08-03 11:14:48 | INFO     | factory_agent.wiki_manager | Wiki page written
+2026-08-03 11:14:48 | INFO     | factory_agent.wiki_manager | Wiki page written
+2026-08-03 11:14:48 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-08-03 11:14:48 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-08-03 11:14:48 | INFO     | factory_agent | AgentHarness initialized — three-layer wiki pattern
+2026-08-03 11:14:48 | INFO     | factory_agent.harness | Processing query
+2026-08-03 11:14:48 | INFO     | factory_agent.wiki_manager | Wiki page written
+2026-08-03 11:14:48 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-08-03 11:14:48 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-08-03 11:14:48 | INFO     | factory_agent | AgentHarness initialized — three-layer wiki pattern
+2026-08-03 11:14:48 | INFO     | factory_agent.harness | Processing query
+2026-08-03 11:14:48 | INFO     | factory_agent.wiki_manager | Wiki page written
+2026-08-03 11:14:48 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-08-03 11:14:48 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-08-03 11:14:48 | INFO     | factory_agent | AgentHarness initialized — three-layer wiki pattern
+2026-08-03 11:14:48 | INFO     | factory_agent.harness | Processing query
+2026-08-03 11:14:48 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-08-03 11:14:48 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-08-03 11:14:48 | INFO     | factory_agent | AgentHarness initialized — three-layer wiki pattern
+2026-08-03 11:14:48 | INFO     | factory_agent.harness | Processing query
+2026-08-03 11:14:48 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-08-03 11:14:48 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-08-03 11:14:48 | INFO     | factory_agent | AgentHarness initialized — three-layer wiki pattern
+2026-08-03 11:14:48 | INFO     | factory_agent.harness | Processing query
+2026-08-03 11:14:48 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-08-03 11:14:48 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-08-03 11:14:48 | INFO     | factory_agent | AgentHarness initialized — three-layer wiki pattern
+2026-08-03 11:14:48 | INFO     | factory_agent.harness | Processing query
+2026-08-03 11:14:48 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-08-03 11:14:49 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-08-03 11:14:49 | INFO     | factory_agent | AgentHarness initialized — three-layer wiki pattern
+2026-08-03 11:14:49 | INFO     | factory_agent.harness | Processing query
+2026-08-03 11:14:49 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-08-03 11:14:49 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-08-03 11:14:49 | INFO     | factory_agent | AgentHarness initialized — three-layer wiki pattern
+2026-08-03 11:14:49 | INFO     | factory_agent.harness | Processing query
+2026-08-03 11:14:49 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-08-03 11:14:49 | INFO     | factory_agent.intent_detector | Intent detected
+2026-08-03 11:14:49 | INFO     | factory_agent.intent_detector | Intent detected
+2026-08-03 11:14:49 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-08-03 11:14:49 | INFO     | factory_agent | AgentHarness initialized — three-layer wiki pattern
+2026-08-03 11:14:49 | INFO     | factory_agent.harness | Processing query
+2026-08-03 11:14:49 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-08-03 11:14:49 | INFO     | factory_agent | AgentHarness initialized — three-layer wiki pattern
+2026-08-03 11:14:49 | INFO     | factory_agent.harness | Processing query
+2026-08-03 11:14:49 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-08-03 11:14:49 | INFO     | factory_agent | AgentHarness initialized — three-layer wiki pattern
+2026-08-03 11:14:49 | INFO     | factory_agent.harness | Processing query
+2026-08-03 11:14:50 | INFO     | factory_agent.output_writer | Report written
+2026-08-03 11:14:50 | INFO     | factory_agent.output_writer | Report written
+2026-08-03 11:14:50 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-08-03 11:14:50 | INFO     | factory_agent | AgentHarness initialized — three-layer wiki pattern
+2026-08-03 11:14:50 | INFO     | factory_agent.harness | Processing query
+2026-08-03 11:14:50 | INFO     | factory_agent.wiki_manager | Wiki page written
+2026-08-03 11:14:50 | INFO     | factory_agent.wiki_manager | Wiki page written
+2026-08-03 11:14:50 | INFO     | factory_agent.wiki_manager | Wiki page written
+2026-08-03 11:14:50 | INFO     | factory_agent.wiki_manager | Wiki page written
+2026-08-03 11:14:50 | INFO     | factory_agent.wiki_manager | Wiki page written
+2026-08-03 11:14:50 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-08-03 11:14:50 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-08-03 11:14:50 | INFO     | factory_agent | AgentHarness initialized — three-layer wiki pattern
+2026-08-03 11:14:50 | INFO     | factory_agent.harness | Processing query
+2026-08-03 11:14:50 | INFO     | factory_agent.wiki_manager | Wiki page written
+2026-08-03 11:14:50 | INFO     | factory_agent.response_synthesizer | Response synthesized
+2026-08-03 11:14:50 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-08-03 11:14:50 | INFO     | factory_agent | AgentHarness initialized — three-layer wiki pattern
+2026-08-03 11:14:50 | INFO     | factory_agent.harness | Processing query
+2026-08-03 11:14:50 | INFO     | factory_agent.response_synthesizer | Response synthesized

@@ -1,0 +1,27 @@
+{
+  "name": "machine_requirements",
+  "display_name": "Machine Requirements",
+  "version": "1.0.0",
+  "description": "Calculates machine time and estimated machine cost for a specific active order.",
+  "required_parameters": {
+    "order_id": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "required_datasets": ["orders", "process", "machines"],
+  "required_catalogs": ["orders.md", "process.md", "machines.md"],
+  "handler_module": "skills.machine_requirements.handler",
+  "handler_function": "handle_machine_requirements",
+  "allowed_tools": [
+    "get_order",
+    "get_machines_for_product",
+    "get_machine",
+    "calculate_machine_hours"
+  ],
+  "permissions": {
+    "data_access": "read_only",
+    "file_write": false
+  },
+  "failure_behavior": "Ask for a valid order_id when missing; return machine availability warnings when present."
+}

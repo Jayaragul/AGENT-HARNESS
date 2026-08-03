@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Factory AI</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #fff;
+  color: #111827;
+  height: 100vh;
+  display: flex;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 260px;
+  background: #f9f9f9;
+  border-right: 1px solid #e5e5e5;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+.sidebar-header {
+  padding: 14px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 15px;
+  font-weight: 600;
+  color: #111827;
+}
+.new-chat {
+  margin: 4px 12px 8px;
+  padding: 10px;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  background: transparent;
+  color: #111827;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+  font-family: inherit;
+  transition: background 0.15s;
+}
+.new-chat:hover { background: #eaeaea; }
+.sidebar-nav {
+  flex: 1;
+  overflow-y: auto;
+  padding: 4px 8px;
+}
+.sidebar-label {
+  padding: 8px 12px 4px;
+  font-size: 11px;
+  font-weight: 500;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  margin: 1px 0;
+  border-radius: 8px;
+  color: #555;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+  transition: all 0.12s;
+}
+.sidebar-item:hover { background: #eaeaea; color: #111827; }
+.sidebar-item.active { background: #eaeaea; color: #111827; font-weight: 500; }
+.sidebar-footer {
+  padding: 12px 16px;
+  border-top: 1px solid #e5e5e5;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: #555;
+  cursor: pointer;
+}
+.sidebar-footer:hover { background: #eaeaea; }
+.avatar {
+  width: 28px; height: 28px;
+  border-radius: 50%;
+  background: #111827;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+/* Main */
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+/* Chat */
+.chat-scroll {
+  flex: 1;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+.chat-inner {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 48px 24px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* Welcome */
+.welcome {
+  margin-bottom: 32px;
+}
+.welcome h1 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 4px;
+}
+.welcome p {
+  font-size: 16px;
+  color: #888;
+  font-weight: 400;
+}
+
+/* Suggestions */
+.suggestions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-bottom: 32px;
+}
+.suggestion {
+  padding: 10px 14px;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #555;
+  transition: all 0.15s;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.suggestion:hover {
+  border-color: #bbb;
+  background: #f9f9f9;
+  color: #111827;
+}
+
+/* Messages */
+.message {
+  animation: fadeIn 0.2s ease;
+}
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+.message.user {
+  padding: 8px 0 8px 80px;
+  text-align: right;
+}
+.message.user .bubble {
+  display: inline-block;
+  background: #111827;
+  color: #fff;
+  border-radius: 16px 16px 4px 16px;
+  padding: 10px 16px;
+  font-size: 15px;
+  line-height: 1.5;
+  max-width: 75%;
+  text-align: left;
+}
+.message.agent {
+  padding: 8px 0;
+  padding-right: 80px;
+}
+.message.agent .bubble { padding: 4px 0; }
+
+.agent-text {
+  font-size: 15px;
+  line-height: 1.65;
+  white-space: pre-wrap;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 8px 0;
+  font-size: 14px;
+}
+th {
+  text-align: left;
+  padding: 6px 0;
+  font-weight: 500;
+  color: #888;
+  font-size: 12px;
+  border-bottom: 1px solid #eee;
+}
+td {
+  padding: 8px 0;
+  border-bottom: 1px solid #f5f5f5;
+}
+tr:last-child td { border-bottom: none; }
+.sufficient { color: #16a34a; }
+.insufficient { color: #dc2626; }
+.critical { color: #dc2626; font-weight: 600; }
+.high { color: #ea580c; }
+.medium { color: #ca8a04; }
+.low { color: #888; }
+.warning {
+  margin: 6px 0;
+  padding: 8px 12px;
+  background: #fffbeb;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #92400e;
+}
+.error { color: #dc2626; }
+.recommendation {
+  margin: 6px 0;
+  padding: 10px 12px;
+  background: #f5f5f5;
+  border-radius: 8px;
+  font-size: 14px;
+}
+.summary { font-size: 14px; color: #666; margin-top: 4px; }
+
+/* Typing */
+.typing {
+  display: flex;
+  gap: 5px;
+  padding: 8px 0;
+  align-items: center;
+}
+.typing span {
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  background: #bbb;
+  animation: pulse 1.2s infinite;
+}
+.typing span:nth-child(2) { animation-delay: 0.2s; }
+.typing span:nth-child(3) { animation-delay: 0.4s; }
+@keyframes pulse {
+  0%, 80%, 100% { opacity: 0.2; transform: scale(0.8); }
+  40% { opacity: 1; transform: scale(1); }
+}
+
+/* Input */
+.input-area {
+  flex-shrink: 0;
+  padding: 8px 24px 24px;
+}
+.input-inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+.input-row {
+  display: flex;
+  gap: 6px;
+  border: 1px solid #d1d5db;
+  border-radius: 24px;
+  padding: 4px 4px 4px 18px;
+  align-items: center;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+.input-row:focus-within {
+  border-color: #999;
+  box-shadow: 0 1px 8px rgba(0,0,0,0.06);
+}
+.input-row input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  padding: 10px 0;
+  font-size: 16px;
+  outline: none;
+  font-family: inherit;
+  color: #111827;
+}
+.input-row input::placeholder { color: #9ca3af; }
+.input-actions {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.input-action {
+  width: 32px; height: 32px;
+  border: none;
+  background: transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #9ca3af;
+  font-size: 16px;
+  transition: all 0.12s;
+}
+.input-action:hover { background: #f5f5f5; color: #555; }
+.send-btn {
+  width: 32px; height: 32px;
+  background: #111827;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 14px;
+  transition: background 0.12s;
+}
+.send-btn:hover { background: #333; }
+.send-btn:disabled { opacity: 0.3; }
+
+@media (max-width: 768px) {
+  .sidebar { position: fixed; top: 0; left: 0; bottom: 0; z-index: 20; transform: translateX(-100%); }
+  .sidebar.open { transform: translateX(0); }
+  .chat-inner { padding: 24px 14px 16px; }
+  .input-area { padding: 8px 14px 16px; }
+  .message.user { padding-left: 40px; }
+  .message.agent { padding-right: 40px; }
+  .welcome h1 { font-size: 28px; }
+  .suggestions { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<!-- Sidebar -->
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-header">
+    <span>Factory AI</span>
+  </div>
+  <button class="new-chat" onclick="newChat()">+ New Chat</button>
+  <div class="sidebar-nav">
+    <div class="sidebar-label">Today</div>
+    <div class="sidebar-item" onclick="sendQuery('Inventory status')">📦 Inventory Analysis</div>
+    <div class="sidebar-item" onclick="sendQuery('Machine downtime')">🔧 Machine Downtime</div>
+    <div class="sidebar-item" onclick="sendQuery('Production plan')">📋 Production Plan</div>
+    <div class="sidebar-label">Yesterday</div>
+    <div class="sidebar-item" onclick="sendQuery('Material planning')">🧩 Material Planning</div>
+  </div>
+  <div class="sidebar-footer">
+    <div class="avatar">J</div>
+    Jayaragul
+  </div>
+</aside>
+
+<!-- Main -->
+<div class="main">
+  <div class="chat-scroll" id="chatScroll">
+    <div class="chat-inner" id="chatInner"></div>
+  </div>
+  <div class="input-area">
+    <div class="input-inner">
+      <div class="input-row">
+        <input type="text" id="input" placeholder="Ask Factory AI..." autofocus>
+        <div class="input-actions">
+          <button class="input-action" title="Attach">📎</button>
+          <button class="send-btn" id="sendBtn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+const chatInner = document.getElementById('chatInner');
+const chatScroll = document.getElementById('chatScroll');
+const input = document.getElementById('input');
+const sendBtn = document.getElementById('sendBtn');
+let sessionId = null;
+
+function newChat() {
+  chatInner.innerHTML = '';
+  sessionId = null;
+  showWelcome();
+}
+
+function showWelcome() {
+  chatInner.innerHTML = `
+    <div class="welcome">
+      <h1>Factory AI</h1>
+      <p>What would you like to know today?</p>
+    </div>
+    <div class="suggestions">
+      <div class="suggestion" onclick="sendQuery(this.textContent.trim())">📦 Inventory status</div>
+      <div class="suggestion" onclick="sendQuery(this.textContent.trim())">⚙️ Machine health</div>
+      <div class="suggestion" onclick="sendQuery(this.textContent.trim())">📈 Production today</div>
+      <div class="suggestion" onclick="sendQuery(this.textContent.trim())">🚨 Delayed orders</div>
+    </div>
+  `;
+}
+
+function addMessage(role, html) {
+  const welcome = chatInner.querySelector('.welcome');
+  if (welcome) welcome.remove();
+  const sug = chatInner.querySelector('.suggestions');
+  if (sug) sug.remove();
+
+  const div = document.createElement('div');
+  div.className = `message ${role}`;
+  div.innerHTML = html;
+  chatInner.appendChild(div);
+  chatScroll.scrollTop = chatScroll.scrollHeight;
+}
+
+function addTyping() {
+  const div = document.createElement('div');
+  div.className = 'message agent';
+  div.id = 't';
+  div.innerHTML = '<div class="bubble"><div class="typing"><span></span><span></span><span></span></div></div>';
+  chatInner.appendChild(div);
+  chatScroll.scrollTop = chatScroll.scrollHeight;
+}
+
+function removeTyping() {
+  const el = document.getElementById('t');
+  if (el) el.remove();
+}
+
+function esc(t) {
+  if (t == null) return '';
+  const d = document.createElement('div');
+  d.textContent = String(t);
+  return d.innerHTML;
+}
+
+function renderResult(data) {
+  if (data.error) return `<div class="error">${esc(data.error)}</div>`;
+  let html = '';
+  if (data.explanation) html += `<div class="agent-text">${esc(data.explanation)}</div>`;
+  const r = data.result || {};
+
+  if (data.skill_name === 'material_sufficiency' && r.materials) {
+    html += '<table><thead><tr><th>Material</th><th>Required</th><th>Available</th><th>Shortage</th><th></th></tr></thead><tbody>';
+    for (const m of r.materials) {
+      const ok = m.status !== 'insufficient';
+      html += `<tr><td>${esc(m.material_name||'')}</td><td>${m.required??'-'} ${esc(m.unit||'')}</td><td>${m.available??'-'} ${esc(m.unit||'')}</td><td>${m.shortage!=null?m.shortage+' '+esc(m.unit||''):'-'}</td><td class="${ok?'sufficient':'insufficient'}">${ok?'OK':'Shortage'}</td></tr>`;
+    }
+    html += '</tbody></table>';
+    if (r.recommendation) html += `<div class="recommendation">${esc(r.recommendation)}</div>`;
+  } else if (data.skill_name === 'machine_requirements' && r.machines) {
+    html += '<table><thead><tr><th>Machine</th><th>Hours</th><th>Cost</th></tr></thead><tbody>';
+    for (const m of r.machines) {
+      html += `<tr><td>${esc(m.machine_name||'')}</td><td>${m.total_hours??'-'}</td><td>$${m.estimated_cost??'-'}</td></tr>`;
+    }
+    html += '</tbody></table>';
+    if (r.total_hours != null) html += `<div class="summary">Total: ${r.total_hours} hrs, $${r.total_cost}</div>`;
+  } else if (data.skill_name === 'material_risk_report' && r.materials_at_risk) {
+    html += '<table><thead><tr><th>Material</th><th>Shortage</th><th>Risk</th></tr></thead><tbody>';
+    for (const m of r.materials_at_risk) {
+      html += `<tr><td>${esc(m.material_name||'')}</td><td>${m.total_shortage??'-'} ${esc(m.unit||'')}</td><td class="${m.risk_level||''}">${esc(m.risk_level||'')}</td></tr>`;
+    }
+    html += '</tbody></table>';
+  }
+  if (data.warnings && data.warnings.length) {
+    for (const w of data.warnings) html += `<div class="warning">${esc(w)}</div>`;
+  }
+  return html;
+}
+
+async function sendQuery(q) {
+  if (!q || !q.trim()) return;
+  input.value = '';
+  addMessage('user', `<div class="bubble">${esc(q)}</div>`);
+  addTyping();
+  try {
+    const res = await fetch('/api/chat', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ query: q, session_id: sessionId }),
+    });
+    const data = await res.json();
+    sessionId = data.session_id || sessionId;
+    removeTyping();
+    const content = renderResult(data);
+    if (content) addMessage('agent', `<div class="bubble">${content}</div>`);
+  } catch (err) {
+    removeTyping();
+    addMessage('agent', `<div class="bubble"><div class="error">Connection error: ${esc(err.message)}</div></div>`);
+  }
+}
+
+sendBtn.addEventListener('click', () => sendQuery(input.value));
+input.addEventListener('keydown', (e) => { if (e.key === 'Enter') sendQuery(input.value); });
+showWelcome();
+</script>
+</body>
+</html>

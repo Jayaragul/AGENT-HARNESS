@@ -1,0 +1,14 @@
+item_id,item_name,category,unit,quantity_on_hand,location,last_updated
+FAB-001,Fabric,raw_material,metres,420.0,Warehouse-A,2026-07-23
+FAB-002,Canvas,raw_material,metres,150.0,Warehouse-A,2026-07-23
+WOD-001,Pine Wood,raw_material,kg,350.0,Warehouse-B,2026-07-23
+WOD-002,Oak Wood,raw_material,kg,200.0,Warehouse-B,2026-07-23
+MTL-001,Steel Rod,raw_material,kg,500.0,Warehouse-C,2026-07-23
+MTL-002,Aluminium Sheet,raw_material,kg,300.0,Warehouse-C,2026-07-23
+PLT-001,White Paint,raw_material,litres,80.0,Warehouse-A,2026-07-23
+PLT-002,Wood Varnish,raw_material,litres,45.0,Warehouse-A,2026-07-23
+SCR-001,Screws Pack,hardware,pieces,10000.0,Warehouse-D,2026-07-23
+SCR-002,Nails Pack,hardware,pieces,8000.0,Warehouse-D,2026-07-23
+HDW-001,Hinges,hardware,pieces,500.0,Warehouse-D,2026-07-23
+HDW-002,Handles,hardware,pieces,400.0,Warehouse-D,2026-07-23
+SPR-001,Spring Set,hardware,pieces,600.0,Warehouse-D,2026-07-23

@@ -1,0 +1,28 @@
+{
+  "name": "material_sufficiency",
+  "display_name": "Material Sufficiency Check",
+  "version": "1.0.0",
+  "description": "Checks whether inventory has enough materials to fulfill a specific active order.",
+  "required_parameters": {
+    "order_id": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "required_datasets": ["orders", "process", "inventory"],
+  "required_catalogs": ["orders.md", "process.md", "inventory.md"],
+  "handler_module": "skills.material_sufficiency.handler",
+  "handler_function": "handle_material_sufficiency",
+  "allowed_tools": [
+    "get_order",
+    "get_materials_for_product",
+    "get_total_material_requirement",
+    "get_item_quantity",
+    "subtract"
+  ],
+  "permissions": {
+    "data_access": "read_only",
+    "file_write": false
+  },
+  "failure_behavior": "Ask for a valid order_id when missing; return handler warnings for missing or insufficient data."
+}

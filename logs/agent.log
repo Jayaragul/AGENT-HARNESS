@@ -1,0 +1,3 @@
+2026-07-28 21:10:25 | INFO     | factory_agent.skill_registry | Skill registry loaded
+2026-07-28 21:10:25 | INFO     | factory_agent | AgentHarness initialized — three-layer wiki pattern
+2026-07-28 21:10:25 | INFO     | factory_agent.harness | Processing query

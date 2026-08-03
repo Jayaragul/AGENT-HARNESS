@@ -1,0 +1,23 @@
+{
+  "name": "material_risk_report",
+  "display_name": "Material Risk Report",
+  "version": "1.0.0",
+  "description": "Reports material shortages and stock risk across all active orders.",
+  "required_parameters": {},
+  "required_datasets": ["orders", "process", "inventory", "materials"],
+  "required_catalogs": ["orders.md", "process.md", "inventory.md", "materials.md"],
+  "handler_module": "skills.material_risk_report.handler",
+  "handler_function": "handle_material_risk_report",
+  "allowed_tools": [
+    "get_active_orders",
+    "get_bom_for_product",
+    "get_total_material_requirement",
+    "get_item_quantity",
+    "subtract"
+  ],
+  "permissions": {
+    "data_access": "read_only",
+    "file_write": false
+  },
+  "failure_behavior": "Return an empty risk report when no active orders exist; skip orders with missing process data."
+}
