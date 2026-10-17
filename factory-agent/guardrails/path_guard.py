@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import os
 from pathlib import Path
 
 
@@ -11,9 +12,9 @@ class PathGuard:
     @staticmethod
     def is_within_directory(target: Path, base_dir: Path) -> bool:
         try:
-            target_resolved = target.resolve()
-            base_resolved = base_dir.resolve()
-            return str(target_resolved).lower().startswith(str(base_resolved).lower())
+            target_resolved = os.path.normcase(str(target.resolve()))
+            base_resolved = os.path.normcase(str(base_dir.resolve()))
+            return os.path.commonpath([target_resolved, base_resolved]) == base_resolved
         except (OSError, ValueError):
             return False
 
@@ -30,20 +31,19 @@ class PathGuard:
 
     @staticmethod
     def validate_data_path(path: Path, data_dir: Path) -> Path:
-        if PathGuard.has_path_traversal(path):
-            raise PathSecurityError(f"Path traversal detected: '{path}'")
-        if PathGuard.has_suspicious_chars(path):
-            raise PathSecurityError(f"Suspicious characters in path: '{path}'")
-        if not PathGuard.is_within_directory(path, data_dir):
-            raise PathSecurityError(f"Path '{path}' is outside data directory")
-        return path
+        return PathGuard._validate_scoped_path(path, data_dir, "data")
 
     @staticmethod
     def validate_output_path(path: Path, output_dir: Path) -> Path:
+        return PathGuard._validate_scoped_path(path, output_dir, "output")
+
+    @staticmethod
+    def _validate_scoped_path(path: Path, base_dir: Path, label: str) -> Path:
         if PathGuard.has_path_traversal(path):
             raise PathSecurityError(f"Path traversal detected: '{path}'")
-        if PathGuard.has_suspicious_chars(path):
+        if not PathGuard.is_within_directory(path, base_dir):
+            raise PathSecurityError(f"Path '{path}' is outside {label} directory")
+        relative_path = path.resolve().relative_to(base_dir.resolve())
+        if PathGuard.has_suspicious_chars(relative_path):
             raise PathSecurityError(f"Suspicious characters in path: '{path}'")
-        if not PathGuard.is_within_directory(path, output_dir):
-            raise PathSecurityError(f"Path '{path}' is outside output directory")
         return path

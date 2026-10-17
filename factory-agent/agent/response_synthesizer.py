@@ -30,9 +30,10 @@ class ResponseSynthesizer:
         session_id: str | None = None,
         context: str | None = None,
         wiki_pages_consulted: list[str] | None = None,
+        audit_id: str | None = None,
     ) -> dict[str, Any]:
         warnings = warnings or []
-        audit_id = str(uuid4())[:8]
+        audit_id = audit_id or str(uuid4())[:8]
 
         explanation = None
         if self._orchestrator:

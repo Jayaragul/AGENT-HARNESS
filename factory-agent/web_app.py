@@ -1,29 +1,43 @@
 from __future__ import annotations
 
-import json
-import os
 import sys
+from contextlib import asynccontextmanager
 from pathlib import Path
 
 BASE_DIR = Path(__file__).parent
-os.chdir(str(BASE_DIR))
 sys.path.insert(0, str(BASE_DIR))
 
 from fastapi import FastAPI, HTTPException
 from fastapi.responses import HTMLResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 
 from agent.harness import AgentHarness
 from config.settings import Settings
 
-app = FastAPI(title="Factory Agent UI")
+harness: AgentHarness | None = None
+
+
+def initialize_harness() -> None:
+    global harness
+    harness = AgentHarness(Settings())
+
+
+@asynccontextmanager
+async def lifespan(_: FastAPI):
+    initialize_harness()
+    try:
+        yield
+    finally:
+        if harness is not None:
+            harness.close()
+
+
+app = FastAPI(title="Factory Agent UI", lifespan=lifespan)
 
 static_dir = Path(__file__).parent / "static"
 static_dir.mkdir(exist_ok=True)
 app.mount("/static", StaticFiles(directory=str(static_dir)), name="static")
-
-harness: AgentHarness | None = None
 
 
 class ChatRequest(BaseModel):
@@ -39,17 +53,11 @@ class ChatResponse(BaseModel):
     skill_name: str
     explanation: str | None = None
     result: dict | None = None
-    datasets_used: list[str] = []
-    warnings: list[str] = []
+    datasets_used: list[str] = Field(default_factory=list)
+    warnings: list[str] = Field(default_factory=list)
     report_path: str | None = None
     error: str | None = None
-
-
-@app.on_event("startup")
-def startup() -> None:
-    global harness
-    settings = Settings()
-    harness = AgentHarness(settings)
+    trace: dict | None = None
 
 
 @app.get("/", response_class=HTMLResponse)
@@ -81,6 +89,7 @@ def chat(req: ChatRequest) -> ChatResponse:
             warnings=response.get("warnings", []),
             report_path=response.get("report_path"),
             error=response.get("error"),
+            trace=response.get("trace"),
         )
     except Exception as e:
         return ChatResponse(
@@ -88,6 +97,14 @@ def chat(req: ChatRequest) -> ChatResponse:
             skill_name="error",
             error=str(e),
         )
+
+
+@app.get("/api/health")
+def health() -> dict[str, str]:
+    return {
+        "status": "ok" if harness is not None else "starting",
+        "service": "factory-agent",
+    }
 
 
 @app.get("/api/dashboard")

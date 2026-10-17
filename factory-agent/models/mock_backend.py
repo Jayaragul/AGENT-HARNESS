@@ -22,5 +22,5 @@ class MockBackend(LLMBackend):
             f"User query: {user_prompt[:100]}...\n"
             f"Context length: {len(context or '')} chars",
             model_name="mock",
-            usage={"prompt_tokens": 0, "completion_tokens": 0},
+            usage=None,
         )

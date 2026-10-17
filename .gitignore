@@ -3,3 +3,19 @@
 .env
 .env.*
 !.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+.venv/
+
+# Runtime artifacts
+logs/
+factory-agent/logs/
+factory-agent/outputs/
+factory-agent/eval_reports/
+factory-agent/wiki/
+wiki/

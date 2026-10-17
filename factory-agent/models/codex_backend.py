@@ -8,8 +8,14 @@ from models.base import LLMBackend, ModelConfig, ModelResponse
 
 
 class CodexBackend(LLMBackend):
-    def __init__(self, api_key: str, config: ModelConfig | None = None) -> None:
+    def __init__(
+        self,
+        api_key: str,
+        model_name: str = "gpt-4o",
+        config: ModelConfig | None = None,
+    ) -> None:
         self._client = OpenAI(api_key=api_key)
+        self._model_name = model_name
         self._config = config or ModelConfig()
 
     def generate(
@@ -27,7 +33,7 @@ class CodexBackend(LLMBackend):
         messages.append({"role": "user", "content": user_prompt})
 
         kwargs: dict[str, Any] = {
-            "model": "gpt-4o",
+            "model": self._model_name,
             "messages": messages,
             "temperature": self._config.temperature,
             "max_tokens": self._config.max_tokens,
@@ -37,10 +43,10 @@ class CodexBackend(LLMBackend):
         choice = response.choices[0]
         return ModelResponse(
             content=choice.message.content or "",
-            model_name="gpt-4o",
+            model_name=self._model_name,
             usage={
                 "prompt_tokens": response.usage.prompt_tokens if response.usage else 0,
                 "completion_tokens": response.usage.completion_tokens if response.usage else 0,
-            },
+            } if response.usage else None,
             raw=response,
         )

@@ -1,10 +1,4 @@
-from pathlib import Path
-
-import pytest
-
 from agent.harness import AgentHarness
-from agent.intent_detector import IntentDetector
-from agent.skill_selector import SkillSelector
 from config.settings import Settings, BackendType
 
 
@@ -97,19 +91,35 @@ def test_harness_feasibility_uses_multiple_tools() -> None:
         "check_material_sufficiency",
         "get_machine_requirements",
     ]
+    assert resp["skill_name"] == "order_feasibility"
 
 
-def test_intent_detector() -> None:
-    detector = IntentDetector()
-    intent = detector.detect("Do we have enough fabric for ORD-1001?")
-    assert intent.skill_name == "material_sufficiency"
-    assert intent.entities["order_id"] == "ORD-1001"
+def test_harness_emits_correlated_trace() -> None:
+    harness = AgentHarness(Settings(backend=BackendType.MOCK))
+    resp = harness.process_query("What machines are needed for ORD-1002?")
+
+    assert resp["trace"]["run_id"] == resp["audit_id"]
+    stages = [event["stage"] for event in resp["trace"]["events"]]
+    assert stages[:4] == [
+        "input_guard",
+        "context",
+        "wiki_retrieval",
+        "planning",
+    ]
+    assert "tool:0:get_machine_requirements" in stages
+    assert stages[-1] == "synthesis"
 
 
-def test_intent_detector_unknown() -> None:
-    detector = IntentDetector()
-    intent = detector.detect("What is the meaning of life?")
-    assert intent.skill_name == "unknown"
+def test_harness_resolves_follow_up_from_session() -> None:
+    harness = AgentHarness(Settings(backend=BackendType.MOCK))
+    first = harness.process_query("Do we have enough material for ORD-1002?")
+    second = harness.process_query(
+        "What about machines for that order?",
+        session_id=first["session_id"],
+    )
+
+    assert second["result"]["tools_used"] == ["get_machine_requirements"]
+    assert second["result"]["tool_results"][0]["result"]["order_id"] == "ORD-1002"
 
 
 def test_wiki_lint() -> None:

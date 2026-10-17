@@ -9,9 +9,14 @@ from models.base import LLMBackend, ModelConfig, ModelResponse
 
 
 class GeminiBackend(LLMBackend):
-    def __init__(self, api_key: str, config: ModelConfig | None = None) -> None:
+    def __init__(
+        self,
+        api_key: str,
+        model_name: str = "gemini-2.5-flash",
+        config: ModelConfig | None = None,
+    ) -> None:
         self._client = genai.Client(api_key=api_key)
-        self._model_name = "gemini-2.5-flash"
+        self._model_name = model_name
         self._config = config or ModelConfig()
 
     def generate(

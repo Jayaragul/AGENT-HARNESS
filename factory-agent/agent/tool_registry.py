@@ -24,6 +24,10 @@ class ToolExecutionError(Exception):
     pass
 
 
+class ToolInputError(ToolExecutionError):
+    pass
+
+
 class ToolRegistry:
     def __init__(
         self,
@@ -103,7 +107,55 @@ class ToolRegistry:
     def execute(self, name: str, arguments: dict[str, Any] | None = None) -> dict[str, Any]:
         if name not in self._tools:
             raise ToolExecutionError(f"Tool '{name}' is not approved.")
-        return self._tools[name](**(arguments or {}))
+        validated = self._validate_arguments(name, arguments or {})
+        try:
+            return self._tools[name](**validated)
+        except ToolExecutionError:
+            raise
+        except (TypeError, ValueError) as exc:
+            raise ToolExecutionError(f"Tool '{name}' failed: {exc}") from exc
+
+    def _validate_arguments(
+        self, name: str, arguments: dict[str, Any]
+    ) -> dict[str, Any]:
+        if not isinstance(arguments, dict):
+            raise ToolInputError(f"Tool '{name}' arguments must be an object.")
+
+        definition = next(item for item in self.definitions() if item.name == name)
+        unknown = sorted(set(arguments) - set(definition.parameters))
+        if unknown:
+            raise ToolInputError(
+                f"Tool '{name}' received unknown arguments: {', '.join(unknown)}"
+            )
+
+        missing = [
+            key
+            for key, spec in definition.parameters.items()
+            if spec.get("required") and key not in arguments
+        ]
+        if missing:
+            raise ToolInputError(
+                f"Tool '{name}' is missing required arguments: {', '.join(missing)}"
+            )
+
+        expected_types = {"string": str, "integer": int, "number": (int, float)}
+        validated = dict(arguments)
+        for key, value in validated.items():
+            expected_name = definition.parameters[key].get("type")
+            expected = expected_types.get(expected_name)
+            if expected and (not isinstance(value, expected) or isinstance(value, bool)):
+                raise ToolInputError(
+                    f"Tool '{name}' argument '{key}' must be {expected_name}."
+                )
+
+        for identifier in ("order_id", "material_id"):
+            if identifier in validated:
+                validated[identifier] = validated[identifier].replace("_", "-").upper()
+
+        if "limit" in validated and not 1 <= validated["limit"] <= 100:
+            raise ToolInputError("Tool 'query_orders' limit must be between 1 and 100.")
+
+        return validated
 
     def list_available_datasets(self) -> dict[str, Any]:
         return {"datasets": self._loader.list_datasets()}

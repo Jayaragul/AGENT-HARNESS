@@ -31,3 +31,13 @@ def setup_logging(log_dir: Path, level: str = "INFO") -> logging.Logger:
 
 def get_logger(name: str | None = None) -> logging.Logger:
     return logging.getLogger(f"factory_agent.{name}" if name else "factory_agent")
+
+
+def shutdown_logging() -> None:
+    """Flush and close factory-agent handlers so temp directories can be removed."""
+
+    logger = logging.getLogger("factory_agent")
+    for handler in list(logger.handlers):
+        handler.flush()
+        handler.close()
+        logger.removeHandler(handler)

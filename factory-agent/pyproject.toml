@@ -1,0 +1,12 @@
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra --strict-markers"
+
+[tool.coverage.run]
+branch = true
+source = ["agent", "config", "data_access", "evals", "guardrails", "models", "output_service", "skills", "tools"]
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = true
+fail_under = 75

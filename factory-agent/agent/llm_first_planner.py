@@ -62,7 +62,7 @@ class LLMFirstPlanner:
             )
 
         if self._llm is None:
-            return self._heuristic_plan(query)
+            return self._heuristic_plan(query, conversation_history)
 
         response = self._llm.generate(
             system_prompt=self._system_prompt(tools),
@@ -71,7 +71,7 @@ class LLMFirstPlanner:
         )
         parsed = self._parse_json(response.content)
         if parsed is None:
-            fallback = self._heuristic_plan(query)
+            fallback = self._heuristic_plan(query, conversation_history)
             return LLMToolPlan(
                 decision=fallback.decision,
                 tool_calls=fallback.tool_calls,
@@ -127,7 +127,16 @@ class LLMFirstPlanner:
         raw_response: str,
     ) -> LLMToolPlan:
         approved = {tool.name for tool in tools}
-        decision = LLMDecision(data.get("decision", LLMDecision.UNSUPPORTED.value))
+        try:
+            decision = LLMDecision(
+                data.get("decision", LLMDecision.UNSUPPORTED.value)
+            )
+        except (TypeError, ValueError):
+            return LLMToolPlan(
+                decision=LLMDecision.UNSUPPORTED,
+                message="The planning model returned an invalid decision.",
+                raw_response=raw_response,
+            )
         calls: list[PlannedToolCall] = []
         for item in data.get("tool_calls", [])[: self.MAX_TOOL_CALLS]:
             name = item.get("name")
@@ -154,9 +163,15 @@ class LLMFirstPlanner:
             raw_response=raw_response,
         )
 
-    def _heuristic_plan(self, query: str) -> LLMToolPlan:
+    def _heuristic_plan(
+        self,
+        query: str,
+        conversation_history: list[dict[str, Any]] | None = None,
+    ) -> LLMToolPlan:
         query_lower = query.lower()
         order_id = self._extract_order_id(query)
+        if order_id is None and self._looks_like_follow_up(query):
+            order_id = self._last_order_id(conversation_history)
         material_id = self._extract_material_id(query)
 
         if any(word in query_lower for word in ("access", "acess", "data", "dataset", "catalog", "wiki")):
@@ -250,7 +265,7 @@ class LLMFirstPlanner:
         if any(word in query_lower for word in ("material", "machine", "order", "inventory")):
             return LLMToolPlan(
                 decision=LLMDecision.CLARIFICATION_REQUIRED,
-                message="Which order or item should I look up?",
+                message="Which order ID or item ID should I look up?",
             )
 
         return LLMToolPlan(
@@ -285,6 +300,24 @@ class LLMFirstPlanner:
     def _extract_material_id(self, query: str) -> str | None:
         match = self.MATERIAL_ID_PATTERN.search(query.upper())
         return match.group(1).replace("_", "-") if match else None
+
+    def _looks_like_follow_up(self, query: str) -> bool:
+        query_lower = query.lower()
+        return any(
+            marker in query_lower
+            for marker in ("what about", "how about", "same order", "that order", "it?")
+        )
+
+    def _last_order_id(
+        self, conversation_history: list[dict[str, Any]] | None
+    ) -> str | None:
+        if not conversation_history:
+            return None
+        for entry in reversed(conversation_history):
+            match = self.ORDER_ID_PATTERN.search(json.dumps(entry, default=str))
+            if match:
+                return match.group(1).replace("_", "-").upper()
+        return None
 
     def _matches_any(self, query: str, patterns: list[str]) -> bool:
         return any(re.search(pattern, query, re.IGNORECASE) for pattern in patterns)
