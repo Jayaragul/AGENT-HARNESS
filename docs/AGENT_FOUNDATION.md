@@ -26,7 +26,7 @@ Every tool proposal crosses `AuthorizedToolExecutor` before `ToolRegistry` can i
 
 | # | Concept | Current project mapping | Status and limitation |
 |---:|---|---|---|
-| 1 | Data adapters | `factory-agent/data_access/csv_loader.py`, `loader.py` | CSV is the current source adapter; no second production source adapter yet. |
+| 1 | Data adapters | `factory-agent/data_access/csv_loader.py`, `loader.py`, `revision.py` | CSV is the current source adapter; schema-and-content revision IDs make each run reproducible, but there is no second production source adapter yet. |
 | 2 | Canonical schema | `factory-agent/data_access/schema_validator.py` | Dataset contracts validate expected fields and constraints before domain use. |
 | 3 | Validation | `factory-agent/data_access/schema_validator.py`, `factory-agent/agent/tool_registry.py` | Ingest validation and tool-argument validation are separate; errors block invalid work. |
 | 4 | Manifest/configuration | `factory-agent/config/settings.py`, `factory-agent/skills/*/manifest.json` | Provider, paths, and skill metadata are configurable; config must continue to affect runtime behavior, not just documentation. |
@@ -38,7 +38,7 @@ Every tool proposal crosses `AuthorizedToolExecutor` before `ToolRegistry` can i
 | 10 | Provider adapters | `factory-agent/models/` | OpenAI/Codex, Gemini, Claude, Ollama, and Mock implement `LLMBackend.generate`. Provider errors and event streams are not yet fully normalized. |
 | 11 | Guardrails | `factory-agent/guardrails/`, `agent/tool_executor.py` | Input checks and a shared tool authorization boundary exist. Current data is a single local demo scope, not a multi-tenant authorization system. |
 | 12 | State and memory | `factory-agent/agent/session_manager.py`, `wiki_manager.py` | Conversation sessions are in-memory; wiki knowledge is file-backed. Neither is a durable workflow store for multi-instance deployment. |
-| 13 | Observability and evaluation | `factory-agent/agent/trace.py`, `factory-agent/evals/`, `factory-agent/tests/` | Per-run traces, behavioral cases, thresholds, CI, and offline regression tests are present. Offline Mock scores are not live-model quality claims. |
+| 13 | Observability and evaluation | `factory-agent/agent/trace.py`, `factory-agent/evals/`, `factory-agent/tests/` | Per-run traces include the pinned data revision; behavioral cases, thresholds, CI, and offline regression tests are present. Offline Mock scores are not live-model quality claims. |
 | 14 | Deployment and recovery | `.github/workflows/ci.yml`, `factory-agent/web_app.py` | CI and a FastAPI entry point exist. Production isolation, durable backups, health monitoring, and recovery procedures remain deployment work. |
 
 ## Data and model adapters are different boundaries
@@ -61,6 +61,8 @@ Adding a database or ERP should change the data boundary while preserving the do
 ## Canonical factory data contract
 
 For every dataset, keep the contract explicit: required and optional fields, identifier keys, types and units, nullability, duplicate handling, and authoritative source. Do not invent a missing value to make a calculation succeed. A required identity or quantity error should stop the operation; optional omissions should be surfaced as a limitation where they affect the result.
+
+At startup the data loader pins a content-derived revision over the configured CSVs and their executable schema definitions. The health/chat response reports that revision without exposing source rows. If a CSV changes while the process is running, the loader fails closed and requires a restart so cached tables cannot be mixed with a newer source snapshot. This detects drift; it does not retain private-data history or provide rollback. A deployment must keep approved, access-controlled snapshots separately.
 
 If this demo becomes multi-factory or multi-tenant, add `tenant_id`, `source_id`, and provenance at ingestion, and derive the permitted scope from trusted server-side identity. Do not accept tenant or actor identity from model-generated arguments. The current `RunContext` is a demo context, not proof of tenant isolation.
 

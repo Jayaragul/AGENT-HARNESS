@@ -56,6 +56,7 @@ class ChatResponse(BaseModel):
     datasets_used: list[str] = Field(default_factory=list)
     warnings: list[str] = Field(default_factory=list)
     report_path: str | None = None
+    data_revision: dict | None = None
     error: str | None = None
     trace: dict | None = None
 
@@ -88,6 +89,7 @@ def chat(req: ChatRequest) -> ChatResponse:
             datasets_used=response.get("datasets_used", []),
             warnings=response.get("warnings", []),
             report_path=response.get("report_path"),
+            data_revision=response.get("data_revision"),
             error=response.get("error"),
             trace=response.get("trace"),
         )
@@ -100,10 +102,23 @@ def chat(req: ChatRequest) -> ChatResponse:
 
 
 @app.get("/api/health")
-def health() -> dict[str, str]:
+def health() -> dict:
+    if harness is None:
+        return {"status": "starting", "service": "factory-agent"}
+    try:
+        data_revision = harness._data_loader.revision.as_dict()
+    except RuntimeError as exc:
+        return {
+            "status": "degraded",
+            "service": "factory-agent",
+            "backend": harness._settings.backend.value,
+            "error": str(exc),
+        }
     return {
-        "status": "ok" if harness is not None else "starting",
+        "status": "ok",
         "service": "factory-agent",
+        "backend": harness._settings.backend.value,
+        "data_revision": data_revision,
     }
 
 

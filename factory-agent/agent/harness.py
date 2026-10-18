@@ -88,6 +88,8 @@ class AgentHarness:
     ) -> dict[str, Any]:
         audit_id = str(uuid4())[:8]
         trace = AgentTrace(audit_id)
+        data_revision = self._data_loader.revision.as_dict()
+        trace.set_metadata("data_revision", data_revision)
         session = self._session_manager.get_or_create(session_id)
 
         logger.info(
@@ -107,6 +109,7 @@ class AgentHarness:
         if query_lower in ("lint", "wiki lint", "health check", "wiki health"):
             response = self._handle_lint(session, audit_id)
             response["trace"] = trace.as_dict()
+            response["data_revision"] = data_revision
             return response
 
         # ── Wiki query operation ────────────────────────────────
@@ -114,16 +117,19 @@ class AgentHarness:
             wiki_query = query[5:].strip()
             response = self._handle_wiki_query(wiki_query, session, audit_id)
             response["trace"] = trace.as_dict()
+            response["data_revision"] = data_revision
             return response
 
         # ── Main flow: wiki-first query → tools → ingest ───────
-        return self._process_wiki_first(
+        response = self._process_wiki_first(
             query=query,
             session=session,
             audit_id=audit_id,
             trace=trace,
             generate_report=generate_report,
         )
+        response["data_revision"] = data_revision
+        return response
 
     # ── Wiki-first query flow ───────────────────────────────────
 
@@ -279,6 +285,15 @@ class AgentHarness:
             wiki_pages_consulted=wiki_pages_consulted,
             audit_id=audit_id,
         )
+        # Keep short conversational answers user-facing. Do not feed planner
+        # diagnostics (tool names, decisions, catalog lists) into the chat UI.
+        if plan.message and plan.decision in {
+            LLMDecision.ANSWER_FROM_CONTEXT,
+            LLMDecision.UNSUPPORTED,
+            LLMDecision.CLARIFICATION_REQUIRED,
+            LLMDecision.SECURITY_REJECTED,
+        }:
+            response["explanation"] = plan.message
         trace.end("synthesis")
         response["trace"] = trace.as_dict()
 

@@ -13,6 +13,7 @@ The project is deliberately hybrid: an LLM can plan and explain, while determini
 - Grounded factory skills for material sufficiency, machine requirements, and portfolio-wide material risk.
 - Multi-tool planning for order feasibility and session-aware follow-up questions.
 - Per-run observability with a correlated `audit_id`, stage timing, tool arguments, status, and total latency.
+- A content-derived data revision that fingerprints CSV sources and their executable schemas, is returned by health/chat APIs, and rejects mid-process data drift.
 - Persistent wiki ingestion isolated from tests and evals.
 - Offline behavioral evals plus optional model evals for OpenAI API, local Codex CLI, Gemini, Claude, or local Ollama backends.
 - A CI quality gate covering tests, branch coverage, and behavioral score thresholds.
@@ -52,9 +53,9 @@ Verified locally on Python 3.11:
 
 | Signal | Result |
 |---|---:|
-| Unit/integration/eval tests | 92 passed |
-| Branch coverage | 77.53% last measured before the Codex CLI adapter (75% gate) |
-| Behavioral eval cases | 12/12 passed |
+| Unit/integration/eval tests | 97 passed |
+| Branch coverage | 78.49% (75% gate) |
+| Behavioral eval cases | 14/14 passed |
 | Behavioral score | 100% |
 | Eval categories | task success, routing, orchestration, robustness, safety |
 
@@ -94,10 +95,16 @@ Open `http://localhost:8000`. Useful endpoints:
 
 | Endpoint | Purpose |
 |---|---|
-| `GET /api/health` | Service readiness |
+| `GET /api/health` | Service readiness, active backend, and pinned data revision |
 | `POST /api/chat` | Run an agent query |
 | `GET /api/tools` | Inspect the approved tool surface |
 | `GET /api/dashboard` | Factory snapshot KPIs |
+
+The health and chat responses, plus each run trace, include a `data_revision` identifier. It changes
+when any configured CSV bytes or the canonical schema contract changes. The
+identifier contains hashes and dataset names only, not factory rows. It is a
+provenance check, not a backup or rollback system; retain private source-data
+snapshots in the factory's approved storage.
 
 Example:
 

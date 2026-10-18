@@ -18,6 +18,8 @@ def test_harness_material_sufficiency() -> None:
     assert tool_result["overall_status"] == "insufficient"
     assert tool_result["order_id"] == "ORD-1001"
     assert resp["wiki_pages_consulted"] is not None
+    assert resp["data_revision"]["format"] == "factory-data-sha256-v1"
+    assert resp["data_revision"]["id"].startswith("factory-data-sha256-v1:")
 
 
 def test_harness_machine_requirements() -> None:
@@ -45,6 +47,26 @@ def test_harness_unknown_question_is_unsupported() -> None:
     assert resp.get("error") is None
     assert resp["skill_name"] == "unsupported"
     assert resp["result"]["mode"] == "llm_first"
+
+
+def test_harness_greeting_gets_friendly_capabilities_answer() -> None:
+    harness = AgentHarness(Settings(backend=BackendType.MOCK))
+    resp = harness.process_query("hey what can you do for me")
+
+    assert resp["skill_name"] == "answer_from_context"
+    assert "Hi!" in resp["explanation"]
+    assert "material availability" in resp["explanation"]
+    assert "available_tools:" not in resp["explanation"]
+
+
+def test_harness_factory_overview_is_grounded_and_user_facing() -> None:
+    harness = AgentHarness(Settings(backend=BackendType.MOCK))
+    resp = harness.process_query("tell me about the factory")
+
+    assert resp["skill_name"] == "answer_from_context"
+    assert "orders, inventory, materials, machines" in resp["explanation"]
+    assert "live factory-system connection" in resp["explanation"]
+    assert "decision:" not in resp["explanation"]
 
 
 def test_harness_help_query() -> None:
@@ -99,6 +121,7 @@ def test_harness_emits_correlated_trace() -> None:
     resp = harness.process_query("What machines are needed for ORD-1002?")
 
     assert resp["trace"]["run_id"] == resp["audit_id"]
+    assert resp["trace"]["metadata"]["data_revision"]["id"] == resp["data_revision"]["id"]
     stages = [event["stage"] for event in resp["trace"]["events"]]
     assert stages[:4] == [
         "input_guard",

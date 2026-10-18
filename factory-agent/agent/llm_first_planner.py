@@ -61,6 +61,10 @@ class LLMFirstPlanner:
                 ),
             )
 
+        conversational_plan = self._conversational_plan(query)
+        if conversational_plan is not None:
+            return conversational_plan
+
         if self._llm is None:
             return self._heuristic_plan(query, conversation_history)
 
@@ -79,6 +83,52 @@ class LLMFirstPlanner:
                 raw_response=response.content,
             )
         return self._plan_from_json(parsed, tools, response.content)
+
+    def _conversational_plan(self, query: str) -> LLMToolPlan | None:
+        normalized = re.sub(r"\s+", " ", query.strip().lower())
+        normalized = normalized.strip("!?., ")
+        normalized = re.sub(r"^(hi|hello|hey)[, ]+", "", normalized)
+        greetings = {
+            "hi", "hello", "hey", "hiya", "good morning", "good afternoon",
+            "good evening", "what can you do", "what can you do for me",
+            "how can you help", "how can you help me",
+        }
+        if normalized in greetings:
+            return LLMToolPlan(
+                decision=LLMDecision.ANSWER_FROM_CONTEXT,
+                message=(
+                    "Hi! I’m Factory AI. I can check order feasibility, material "
+                    "availability and shortages, inventory items, and machine time "
+                    "and cost using the factory data connected to this app. Try "
+                    "“Can we complete order ORD-1001?” or “Show the material risk "
+                    "report.” What would you like to check?"
+                ),
+            )
+
+        about_factory = any(
+            phrase in normalized
+            for phrase in (
+                "tell me about the factory", "tell me about factory",
+                "tell about the factory", "tell about factory",
+                "describe the factory", "factory overview", "about this factory",
+                "what is this factory",
+            )
+        )
+        if about_factory:
+            return LLMToolPlan(
+                decision=LLMDecision.ANSWER_FROM_CONTEXT,
+                message=(
+                    "I can summarize the factory data connected to this app: "
+                    "customer orders, inventory, materials, machines, and the "
+                    "production processes that link products to materials and "
+                    "machines. I can use those records to check whether an order "
+                    "has enough materials, estimate required machine time and "
+                    "cost, or identify material-shortage risks. I don’t have a "
+                    "separate company profile or live factory-system connection "
+                    "unless one has been configured."
+                ),
+            )
+        return None
 
     def _system_prompt(self, tools: list[ToolDefinition]) -> str:
         tool_lines = []
