@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="540" viewBox="0 0 1200 540" role="img" aria-labelledby="title desc">
+  <title id="title">Factory Agent Harness overview</title>
+  <desc id="desc">A factory question passes through model planning, validated tools and factory data to an answer with a run trace. The same harness is checked by tests and behavioral evaluations.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#101c30"/><stop offset="1" stop-color="#152b39"/></linearGradient>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 8 4 0 8" fill="none" stroke="#64d9c4" stroke-width="1.5"/></marker>
+  </defs>
+  <rect width="1200" height="540" rx="24" fill="url(#bg)"/>
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <text x="48" y="55" fill="#64d9c4" font-size="13" font-weight="700" letter-spacing="3">FACTORY OPERATIONS / AGENT ENGINEERING</text>
+    <text x="48" y="110" fill="#f3f7ff" font-size="44" font-weight="700">Factory Agent Harness</text>
+    <text x="48" y="146" fill="#bacbdf" font-size="19">Model planning. Deterministic calculations. Inspectable runs.</text>
+    <rect x="48" y="178" width="1104" height="54" rx="12" fill="#20374a"/>
+    <text x="68" y="211" fill="#e0f5ef" font-size="18">“Can we complete order ORD-1001?”</text>
+    <g fill="#17293f" stroke="#3b536b">
+      <rect x="48" y="268" width="240" height="127" rx="14"/>
+      <rect x="336" y="268" width="240" height="127" rx="14"/>
+      <rect x="624" y="268" width="240" height="127" rx="14"/>
+      <rect x="912" y="268" width="240" height="127" rx="14"/>
+    </g>
+    <g stroke="#64d9c4" stroke-width="2" marker-end="url(#arrow)"><path d="M294 330H324"/><path d="M582 330H612"/><path d="M870 330H900"/></g>
+    <g fill="#64d9c4" font-size="12" font-weight="700" letter-spacing="2">
+      <text x="68" y="296">01 / PLAN</text><text x="356" y="296">02 / VALIDATE</text><text x="644" y="296">03 / CALCULATE</text><text x="932" y="296">04 / EXPLAIN</text>
+    </g>
+    <g fill="#f3f7ff" font-size="21" font-weight="600">
+      <text x="68" y="330">Model + context</text><text x="356" y="330">Tool boundary</text><text x="644" y="330">Factory tools</text><text x="932" y="330">Answer + trace</text>
+    </g>
+    <g fill="#bacbdf" font-size="15">
+      <text x="68" y="358">Select a structured plan</text><text x="68" y="380">or use offline MOCK mode</text>
+      <text x="356" y="358">Check allowed tools</text><text x="356" y="380">and argument contracts</text>
+      <text x="644" y="358">Read validated CSV data</text><text x="644" y="380">with a pinned revision</text>
+      <text x="932" y="358">Return results, timing</text><text x="932" y="380">and data provenance</text>
+    </g>
+    <path d="M48 428H1152" stroke="#3b536b"/>
+    <text x="48" y="461" fill="#f3f7ff" font-size="16" font-weight="600">One harness. Multiple backends.</text>
+    <text x="48" y="489" fill="#bacbdf" font-size="15">OpenAI API / Codex CLI / Gemini / Claude / Ollama / MOCK</text>
+    <text x="770" y="461" fill="#f3f7ff" font-size="16" font-weight="600">Quality checks use the same entry point</text>
+    <text x="770" y="489" fill="#bacbdf" font-size="15">Tests + coverage + scored behavioral evals</text>
+  </g>
+</svg>

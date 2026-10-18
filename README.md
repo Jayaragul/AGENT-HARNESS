@@ -2,6 +2,8 @@
 
 [![quality-gate](https://github.com/Jayaragul/AGENT-HARNESS/actions/workflows/ci.yml/badge.svg)](https://github.com/Jayaragul/AGENT-HARNESS/actions/workflows/ci.yml)
 
+![Factory Agent Harness: a factory question moves through planning, tool validation, deterministic calculations, and an answer with a trace.](docs/assets/factory-agent-overview.svg)
+
 A production-shaped AI agent for factory operations. It turns natural-language requests into validated, read-only tool calls over factory data, preserves a trace for every run, and ships with a scored behavioral evaluation harness rather than relying on demo prompts.
 
 The project is deliberately hybrid: an LLM can plan and explain, while deterministic Python tools own calculations and business facts. `MOCK` mode follows the same harness without an API key, making regression tests and CI repeatable.
@@ -20,32 +22,62 @@ The project is deliberately hybrid: an LLM can plan and explain, while determini
 
 ## Architecture
 
-```text
-User / API
-    │
-    ▼
-InputGuard ── rejects injection patterns and invalid input
-    │
-    ├── Catalog context + wiki retrieval
-    │
-    ▼
-LLMFirstPlanner
-    ├── model-backed structured planning (CODEX / CODEX_CLI / GEMINI / CLAUDE / OLLAMA)
-    └── deterministic offline planning (MOCK)
-    │
-    ▼
-ToolRegistry ── allowlist + schema validation
-    │
-    ├── material sufficiency
-    ├── machine requirements
-    ├── material risk report
-    └── read-only dataset queries
-    │
-    ▼
-ResponseSynthesizer ── grounded answer + report + run trace
+```mermaid
+flowchart TD
+    user[Factory user / Chat UI / API] --> harness[AgentHarness]
+    harness --> revision{Source data matches pinned revision?}
+    revision -->|No| restart[Reject run: reload changed data]
+    revision -->|Yes| guard[Input guard]
+    guard --> context[Catalog context + session history]
+    context --> wiki[Wiki page lookup]
+    wiki --> planner[Structured planner]
+    backend[OpenAI API / Codex CLI / Gemini / Claude / Ollama / MOCK] -.-> planner
+    planner --> decision{Planner decision}
+    decision -->|Tool calls| executor[AuthorizedToolExecutor + ToolRegistry]
+    decision -->|Conversation / clarification / refusal| response[Response synthesis]
+    executor --> tools[Read-only factory tools]
+    data[(CSV sources + executable schemas)] --> tools
+    tools --> ingest[Ingest skill results into wiki]
+    ingest --> response
+    response --> answer[Answer + audit ID + trace + data revision]
+    classDef gate fill:#fff1d6,stroke:#b97817,color:#503200
+    classDef engine fill:#dff5ef,stroke:#238473,color:#123c34
+    class revision,guard,executor gate
+    class harness,planner,tools,response engine
 ```
 
 The evaluation harness invokes the same `AgentHarness` used by the API. It does not bypass routing or call skill functions directly.
+
+The wiki lookup records relevant page references; the planner currently receives catalog context and session history. Factory facts and calculations come from the approved data tools.
+
+## From question to evidence
+
+This example shows how an order question becomes a verifiable answer. The actual values depend on the loaded factory data.
+
+```mermaid
+sequenceDiagram
+    actor User as Factory planner
+    participant API as Chat API
+    participant Harness as Agent harness
+    participant Planner as Planner backend
+    participant Tools as Approved factory tools
+    participant Data as Validated CSV data
+    User->>API: Can we complete order ORD-1001?
+    API->>Harness: Query + session ID
+    Harness->>Harness: Check data revision and input
+    Harness->>Planner: Catalogs + tool contracts + history
+    Planner-->>Harness: Structured plan for order checks
+    loop Each planned tool call (up to five)
+        Harness->>Harness: Validate tool and arguments
+        Harness->>Tools: Execute approved call
+        Tools->>Data: Load required dataset
+        Data-->>Tools: Validated rows
+        Tools-->>Harness: Calculated result or explicit error
+    end
+    Harness->>Harness: Record skill results and synthesize response
+    Harness-->>API: Answer + tool results + trace + data revision
+    API-->>User: Feasibility answer with supporting results
+```
 
 ## Current quality gate
 
@@ -60,6 +92,24 @@ Verified locally on Python 3.11:
 | Eval categories | task success, routing, orchestration, robustness, safety |
 
 `MOCK` scores are deterministic regression results, not a claim about a live model's general intelligence. Use `--backend CODEX`, `--backend CODEX_CLI`, `--backend GEMINI`, `--backend CLAUDE`, or `--backend OLLAMA` to measure a configured model against the same cases.
+
+```mermaid
+flowchart LR
+    change[Push / pull request] --> tests[Tests + branch coverage]
+    change --> cases[Versioned JSONL eval cases]
+    cases --> harness[Same AgentHarness as the API]
+    harness --> score[Check decisions, tools and response assertions]
+    tests --> gate{All thresholds pass?}
+    score --> gate
+    gate -->|Yes| pass[CI passes]
+    gate -->|No| fail[CI fails]
+    classDef success fill:#dff5ef,stroke:#238473,color:#123c34
+    classDef failure fill:#ffe3e3,stroke:#b74444,color:#672525
+    class pass success
+    class fail failure
+```
+
+CI requires passing tests, at least **75% branch coverage**, a behavioral score of at least **95%**, and an eval case pass rate of at least **90%**. The diagram shows the checks conceptually; the workflow runs them in sequence.
 
 ## Quick start
 
